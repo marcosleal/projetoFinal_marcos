@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1468674752 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tarefas.h"
+
+1468675619 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.h
+	<inttypes.h>
+
+1468674933 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.c
+	<stdio.h>
+	<stdlib.h>
+	<inttypes.h>
+	"tarefas.h"
+
