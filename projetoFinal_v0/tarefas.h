@@ -1,13 +1,29 @@
+/** \file tarefas.h
+ * \brief   Cabeçalho de Funções para manipulação das tarefas.
+ *
+ * \author  Sérgio Luiz Martins Jr.
+ * \author  Marcos Vinícius Leal da Silva
+ * \date    16/07/16
+ * \version 1.0
+ *
+ * A more elaborated file description.
+ */
+
 #ifndef TAREFAS_H_INCLUDED
 #define TAREFAS_H_INCLUDED
 
 #include <inttypes.h>
 
+/** \enum ESTADO_TAREFA
+ * Indica qual é o estado da tarefa, sendo:
+ */
+
+
 typedef enum{
-    OCIOSA,     // Nada a fazer
-    EXECUTANDO, // Em execu��o
-    PRONTA,     // Pronta para ser executada
-    PARADA      // Tarefa parada por outra com maior prioridade
+    OCIOSA,     /// < Nada a fazer >
+    EXECUTANDO, /// < Em execução >
+    PRONTA,     /// < Pronta para ser executada >
+    PARADA      /// < Tarefa parada por outra com maior prioridade >
 } ESTADO_TAREFA;
 
 typedef struct tarefas tarefa_t;

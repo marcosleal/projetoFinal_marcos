@@ -1,0 +1,77 @@
+\hypertarget{tarefas_8h}{}\section{Referência ao ficheiro tarefas.\+h}
+\label{tarefas_8h}\index{tarefas.\+h@{tarefas.\+h}}
+
+
+CabeÃ§alho de FunÃ§Ãµes para manipulaÃ§Ã£o das tarefas.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+\subsection*{Definições de tipos}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct tarefas {\bfseries tarefa\+\_\+t}\hypertarget{tarefas_8h_a1839d96610ba5b37c7079bb63b2d6633}{}\label{tarefas_8h_a1839d96610ba5b37c7079bb63b2d6633}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerações}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} \{ {\bfseries O\+C\+I\+O\+SA}, 
+\hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617}{E\+X\+E\+C\+U\+T\+A\+N\+DO}, 
+\hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489}{P\+R\+O\+N\+TA}, 
+\hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2}{P\+A\+R\+A\+DA}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+tarefa\+\_\+t $\ast$ {\bfseries cria\+\_\+tarefa} ()\hypertarget{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{}\label{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}
+
+\item 
+uint8\+\_\+t {\bfseries tarefa\+\_\+get\+\_\+id} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{}\label{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}
+
+\item 
+uint64\+\_\+t {\bfseries tarefa\+\_\+get\+\_\+duracao} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{}\label{tarefas_8h_a164c50ca79866487c21cf627e27d207b}
+
+\item 
+uint64\+\_\+t {\bfseries tarefa\+\_\+get\+\_\+periodo} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{}\label{tarefas_8h_a50daad70095d39fe573bd279cb95c112}
+
+\item 
+void {\bfseries tarefa\+\_\+set\+\_\+estado} (tarefa\+\_\+t $\ast$tarefa, \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} estado)\hypertarget{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{}\label{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}
+
+\item 
+\hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} {\bfseries tarefa\+\_\+get\+\_\+estado} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_af43446675d28da684f4a104d2038aef6}{}\label{tarefas_8h_af43446675d28da684f4a104d2038aef6}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrição detalhada}
+CabeÃ§alho de FunÃ§Ãµes para manipulaÃ§Ã£o das tarefas. 
+
+\begin{DoxyAuthor}{Autor}
+SÃ©rgio Luiz Martins Jr. 
+
+Marcos VinÃ­cius Leal da Silva 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Data}
+16/07/16 
+\end{DoxyDate}
+\begin{DoxyVersion}{Versão}
+1.\+0
+\end{DoxyVersion}
+A more elaborated file description. 
+
+\subsection{Documentação dos valores da enumeração}
+\index{tarefas.\+h@{tarefas.\+h}!E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA@{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}}
+\index{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA@{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}!tarefas.\+h@{tarefas.\+h}}
+\subsubsection[{\texorpdfstring{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}{ESTADO_TAREFA}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}}\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}
+Indica qual Ã© o estado da tarefa, sendo\+: \begin{Desc}
+\item[Valores de enumerações]\par
+\begin{description}
+\index{E\+X\+E\+C\+U\+T\+A\+N\+DO@{E\+X\+E\+C\+U\+T\+A\+N\+DO}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!E\+X\+E\+C\+U\+T\+A\+N\+DO@{E\+X\+E\+C\+U\+T\+A\+N\+DO}}\item[{\em 
+E\+X\+E\+C\+U\+T\+A\+N\+DO\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617}
+}]$<$ Nada a fazer $>$ \index{P\+R\+O\+N\+TA@{P\+R\+O\+N\+TA}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!P\+R\+O\+N\+TA@{P\+R\+O\+N\+TA}}\item[{\em 
+P\+R\+O\+N\+TA\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489}
+}]$<$ Em execuÃ§Ã£o $>$ \index{P\+A\+R\+A\+DA@{P\+A\+R\+A\+DA}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!P\+A\+R\+A\+DA@{P\+A\+R\+A\+DA}}\item[{\em 
+P\+A\+R\+A\+DA\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2}
+}]$<$ Pronta para ser executada $>$ $<$ Tarefa parada por outra com maior prioridade $>$ \end{description}
+\end{Desc}

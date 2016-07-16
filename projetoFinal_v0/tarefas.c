@@ -1,3 +1,15 @@
+/** \file tarefas.c
+ * \brief   Funções para manipulação das tarefas.
+ *
+ * \author  Sérgio Luiz Martins Jr.
+ * \author  Marcos Vinícius Leal da Silva
+ * \date    16/07/16
+ * \version 1.0
+ *
+ * A more elaborated file description.
+ */
+
+
 // Changelog
 //
 //  16/07/2016 - Criação do dado
@@ -8,6 +20,8 @@
 #include <inttypes.h>
 
 #include "tarefas.h"
+
+
 
 struct tarefas{
     uint8_t id;            // Identificador da tarefa
