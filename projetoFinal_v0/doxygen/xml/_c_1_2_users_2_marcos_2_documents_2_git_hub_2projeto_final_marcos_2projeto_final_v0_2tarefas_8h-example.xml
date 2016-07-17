@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_c_1_2_users_2_marcos_2_documents_2_git_hub_2projeto_final_marcos_2projeto_final_v0_2tarefas_8h-example" kind="example">
+    <compoundname>C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h</compoundname>
+    <detaileddescription>
+<para>RequisiÃ§Ã£o da duraÃ§Ã£o (C) da tarefa <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereÃ§o da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inteiro de 64 bits nÃ£o sinalizado </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> <programlisting><codeline></codeline>
+<codeline><highlight class="preprocessor">#ifndef<sp/>TAREFAS_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAREFAS_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9" kindref="member">OCIOSA</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617" kindref="member">EXECUTANDO</ref>,<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489" kindref="member">PRONTA</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2" kindref="member">PARADA</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">}<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref>;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tarefas<sp/>tarefa_t;</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">tarefa_t*<sp/><ref refid="tarefas_8c_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa</ref>();</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">uint8_t<sp/><ref refid="tarefas_8c_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id</ref>(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">uint64_t<sp/>tarefa_get_duracao(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">uint64_t<sp/><ref refid="tarefas_8c_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo</ref>(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tarefas_8c_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado</ref>(tarefa_t*<sp/>tarefa,<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/><ref refid="tarefas_8c_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado</ref>(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TAREFAS_H_INCLUDED</highlight></codeline>
+</programlisting> </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

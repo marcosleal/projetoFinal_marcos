@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="tarefas_8h" kind="file" language="C++">
+    <compoundname>tarefas.h</compoundname>
+    <includes local="no">inttypes.h</includes>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="tarefas_8c" local="yes">tarefas.c</includedby>
+    <incdepgraph>
+      <node id="12">
+        <label>tarefas.h</label>
+        <link refid="tarefas.h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="15">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="16">
+        <label>tarefas.c</label>
+        <link refid="tarefas_8c"/>
+      </node>
+      <node id="14">
+        <label>tarefas.h</label>
+        <link refid="tarefas.h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" prot="public" static="no">
+        <name>ESTADO_TAREFA</name>
+        <enumvalue id="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9" prot="public">
+          <name>OCIOSA</name>
+          <briefdescription>
+<para>Nada a fazer. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617" prot="public">
+          <name>EXECUTANDO</name>
+          <briefdescription>
+<para>Em execução. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489" prot="public">
+          <name>PRONTA</name>
+          <briefdescription>
+<para>Pronta para ser executada. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2" prot="public">
+          <name>PARADA</name>
+          <briefdescription>
+<para>Tarefa parada por outra com maior prioridade. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indica qual é o estado da tarefa, sendo: </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="20" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="tarefas_8h_1a1839d96610ba5b37c7079bb63b2d6633" prot="public" static="no">
+        <type>struct tarefas</type>
+        <definition>typedef struct tarefas tarefa_t</definition>
+        <argsstring></argsstring>
+        <name>tarefa_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="27" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>tarefa_t *</type>
+        <definition>tarefa_t* cria_tarefa</definition>
+        <argsstring>()</argsstring>
+        <name>cria_tarefa</name>
+        <briefdescription>
+<para>Criação de tarefas, indicando C e T. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Vazio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Um ponteiro do tipo tarefa_t </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="39" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="31" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t tarefa_get_id</definition>
+        <argsstring>(tarefa_t *tarefa)</argsstring>
+        <name>tarefa_get_id</name>
+        <param>
+          <type>tarefa_t *</type>
+          <declname>tarefa</declname>
+        </param>
+        <briefdescription>
+<para>Requisição do id da tarefa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inteiro de 8 bits não sinalizado </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="47" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="44" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tarefa_get_duracao</definition>
+        <argsstring>(tarefa_t *tarefa)</argsstring>
+        <name>tarefa_get_duracao</name>
+        <param>
+          <type>tarefa_t *</type>
+          <declname>tarefa</declname>
+        </param>
+        <briefdescription>
+<para>Requisição da duração (C) da tarefa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inteiro de 64 bits não sinalizado </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="55" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="57" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tarefa_get_periodo</definition>
+        <argsstring>(tarefa_t *tarefa)</argsstring>
+        <name>tarefa_get_periodo</name>
+        <param>
+          <type>tarefa_t *</type>
+          <declname>tarefa</declname>
+        </param>
+        <briefdescription>
+<para>Requisição do período (T) da tarefa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inteiro de 64 bits não sinalizado </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="63" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="69" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tarefa_set_estado</definition>
+        <argsstring>(tarefa_t *tarefa, ESTADO_TAREFA estado)</argsstring>
+        <name>tarefa_set_estado</name>
+        <param>
+          <type>tarefa_t *</type>
+          <declname>tarefa</declname>
+        </param>
+        <param>
+          <type><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref></type>
+          <declname>estado</declname>
+        </param>
+        <briefdescription>
+<para>Estabelece o estado da tarefa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>estado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pondendo ser OCIOSO, EXECUTANDO, PRONTA ou PARADA </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vazio </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="72" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="tarefas_8h_1af43446675d28da684f4a104d2038aef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref></type>
+        <definition>ESTADO_TAREFA tarefa_get_estado</definition>
+        <argsstring>(tarefa_t *tarefa)</argsstring>
+        <name>tarefa_get_estado</name>
+        <param>
+          <type>tarefa_t *</type>
+          <declname>tarefa</declname>
+        </param>
+        <briefdescription>
+<para>Requisição do estado da tarefa. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>estado pondendo ser OCIOSO, EXECUTANDO, PRONTA ou PARADA </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h" line="80" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="85" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Cabeçalho de Funções para manipulação das tarefas. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Sérgio Luiz Martins Jr. </para></simplesect>
+<simplesect kind="author"><para>Marcos Vinícius Leal da Silva </para></simplesect>
+<simplesect kind="date"><para>16/07/16 </para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+A more elaborated file description. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>TAREFAS_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAREFAS_H_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9" kindref="member">OCIOSA</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617" kindref="member">EXECUTANDO</ref>,<sp/></highlight></codeline>
+<codeline lineno="23" refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489" kindref="member">PRONTA</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2" kindref="member">PARADA</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tarefas<sp/>tarefa_t;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"></codeline>
+<codeline lineno="39"><highlight class="normal">tarefa_t*<sp/><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"></codeline>
+<codeline lineno="47"><highlight class="normal">uint8_t<sp/><ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id</ref>(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"></codeline>
+<codeline lineno="55"><highlight class="normal">uint64_t<sp/><ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao</ref>(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"></codeline>
+<codeline lineno="63"><highlight class="normal">uint64_t<sp/><ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo</ref>(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"></codeline>
+<codeline lineno="72"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado</ref>(tarefa_t*<sp/>tarefa,<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/><ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado</ref>(tarefa_t*<sp/>tarefa);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>TAREFAS_H_INCLUDED</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.h"/>
+  </compounddef>
+</doxygen>

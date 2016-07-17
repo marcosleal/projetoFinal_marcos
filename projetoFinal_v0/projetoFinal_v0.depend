@@ -13,3 +13,17 @@
 	<inttypes.h>
 	"tarefas.h"
 
+1468713136 source:c:\users\marcos\documents\github\projetofinal_marcos\projetofinal_v0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tarefas.h"
+
+1468718419 c:\users\marcos\documents\github\projetofinal_marcos\projetofinal_v0\tarefas.h
+	<inttypes.h>
+
+1468718308 source:c:\users\marcos\documents\github\projetofinal_marcos\projetofinal_v0\tarefas.c
+	<stdio.h>
+	<stdlib.h>
+	<inttypes.h>
+	"tarefas.h"
+
