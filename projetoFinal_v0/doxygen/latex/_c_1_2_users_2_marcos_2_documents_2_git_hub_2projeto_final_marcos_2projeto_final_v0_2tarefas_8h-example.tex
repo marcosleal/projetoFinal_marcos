@@ -1,0 +1,50 @@
+\hypertarget{_c_1_2_users_2_marcos_2_documents_2_git_hub_2projeto_final_marcos_2projeto_final_v0_2tarefas_8h-example}{}\section{C\+:/\+Users/\+Marcos/\+Documents/\+Git\+Hub/projeto\+Final\+\_\+marcos/projeto\+Final\+\_\+v0/tarefas.\+h}
+RequisiÃ§Ã£o da duraÃ§Ã£o (C) da tarefa 
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & um ponteiro que representa o endereÃ§o da tarefa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Inteiro de 64 bits nÃ£o sinalizado 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\+\_\+tarefa()}, \hyperlink{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\+\_\+get\+\_\+id()}, \hyperlink{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{tarefa\+\_\+get\+\_\+periodo()}, \hyperlink{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{tarefa\+\_\+set\+\_\+estado()}, \hyperlink{tarefas_8h_af43446675d28da684f4a104d2038aef6}{tarefa\+\_\+get\+\_\+estado()}
+\end{DoxySeeAlso}
+
+\begin{DoxyCodeInclude}
+
+\textcolor{preprocessor}{#ifndef TAREFAS\_H\_INCLUDED}
+\textcolor{preprocessor}{#define TAREFAS\_H\_INCLUDED}
+
+\textcolor{preprocessor}{#include <inttypes.h>}
+
+\textcolor{keyword}{typedef} \textcolor{keyword}{enum}\{
+    \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9}{OCIOSA},     
+    \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617}{EXECUTANDO}, 
+    \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489}{PRONTA},     
+    \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2}{PARADA}      
+\} \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{ESTADO\_TAREFA};
+
+\textcolor{keyword}{typedef} \textcolor{keyword}{struct }tarefas tarefa\_t;
+
+
+tarefa\_t* \hyperlink{tarefas_8c_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\_tarefa}();
+
+
+uint8\_t \hyperlink{tarefas_8c_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\_get\_id}(tarefa\_t* tarefa);
+
+
+uint64\_t tarefa\_get\_duracao(tarefa\_t* tarefa);
+
+
+uint64\_t \hyperlink{tarefas_8c_a50daad70095d39fe573bd279cb95c112}{tarefa\_get\_periodo}(tarefa\_t* tarefa);
+
+
+\textcolor{keywordtype}{void} \hyperlink{tarefas_8c_ae6140bb7ef769b8117a4973815edbb18}{tarefa\_set\_estado}(tarefa\_t* tarefa, \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{ESTADO\_TAREFA} estado);
+
+
+\hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{ESTADO\_TAREFA} \hyperlink{tarefas_8c_af43446675d28da684f4a104d2038aef6}{tarefa\_get\_estado}(tarefa\_t* tarefa);
+
+\textcolor{preprocessor}{#endif // TAREFAS\_H\_INCLUDED}
+\end{DoxyCodeInclude}
+ 
