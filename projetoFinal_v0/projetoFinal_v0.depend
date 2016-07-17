@@ -1,18 +1,22 @@
 # depslib dependency file v1.0
-1468674752 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\main.c
+1468780079 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\main.c
 	<stdio.h>
 	<stdlib.h>
 	"tarefas.h"
+	"lista_enc.h"
+	"no.h"
 
-1468675619 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.h
+1468780132 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.h
 	<inttypes.h>
+	"lista_enc.h"
 
-1468674933 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.c
+1468780161 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.c
 	<stdio.h>
 	<stdlib.h>
 	<inttypes.h>
 	"tarefas.h"
 
+<<<<<<< HEAD
 1468713136 source:c:\users\marcos\documents\github\projetofinal_marcos\projetofinal_v0\main.c
 	<stdio.h>
 	<stdlib.h>
@@ -26,4 +30,21 @@
 	<stdlib.h>
 	<inttypes.h>
 	"tarefas.h"
+=======
+1468780097 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\lista_enc.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_enc.h"
+	"no.h"
+
+1468780092 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\lista_enc.h
+	"no.h"
+
+1468706760 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\no.h
+
+1467931106 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\no.c
+	<stdio.h>
+	<stdlib.h>
+	"no.h"
+>>>>>>> upstream/master
 

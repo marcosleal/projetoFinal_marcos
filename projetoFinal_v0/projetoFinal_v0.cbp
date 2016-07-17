@@ -31,9 +31,17 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="lista_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista_enc.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="no.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="no.h" />
 		<Unit filename="tarefas.c">
 			<Option compilerVar="CC" />
 		</Unit>
