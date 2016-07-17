@@ -43,12 +43,22 @@
         <argsstring>()</argsstring>
         <name>cria_tarefa</name>
         <briefdescription>
-        </briefdescription>
+<para>Criação de tarefas, indicando C e T. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Vazio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Um ponteiro do tipo tarefa_t </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="34" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="34" bodyend="45"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="31" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="31" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="tarefas_8c_1a2b9fb55306eaf268df4740d337ed8c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint8_t</type>
@@ -60,12 +70,22 @@
           <declname>tarefa</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Requisição do id da tarefa. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inteiro de 8 bits não sinalizado </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="47" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="47" bodyend="58"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="44" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="44" bodyend="55"/>
       </memberdef>
       <memberdef kind="function" id="tarefas_8c_1a164c50ca79866487c21cf627e27d207b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -77,12 +97,22 @@
           <declname>tarefa</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Requisição da duração (C) da tarefa. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inteiro de 64 bits não sinalizado </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="60" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="60" bodyend="70"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="57" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="57" bodyend="67"/>
       </memberdef>
       <memberdef kind="function" id="tarefas_8c_1a50daad70095d39fe573bd279cb95c112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint64_t</type>
@@ -94,12 +124,22 @@
           <declname>tarefa</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Requisição do período (T) da tarefa. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Inteiro de 64 bits não sinalizado </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="72" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="72" bodyend="79"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="69" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="69" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="tarefas_8c_1ae6140bb7ef769b8117a4973815edbb18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -115,12 +155,29 @@
           <declname>estado</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Estabelece o estado da tarefa. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>estado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pondendo ser OCIOSO, EXECUTANDO, PRONTA ou PARADA </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vazio </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="81" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="81" bodyend="86"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="78" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="78" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="tarefas_8c_1af43446675d28da684f4a104d2038aef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref></type>
@@ -132,107 +189,115 @@
           <declname>tarefa</declname>
         </param>
         <briefdescription>
-        </briefdescription>
+<para>Requisição do estado da tarefa. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tarefa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>um ponteiro que representa o endereço da tarefa </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>estado pondendo ser OCIOSO, EXECUTANDO, PRONTA ou PARADA </para></simplesect>
+<simplesect kind="see"><para><ref refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa()</ref>, <ref refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id()</ref>, <ref refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao()</ref>, <ref refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo()</ref>, <ref refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado()</ref> </para></simplesect>
+</para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="88" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="88" bodyend="95"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="85" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="85" bodyend="92"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Funções para manipulação das tarefas. </para>    </briefdescription>
+<para>Fun��es para manipula��o das tarefas. </para>    </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>Sérgio Luiz Martins Jr. </para></simplesect>
-<simplesect kind="author"><para>Marcos Vinícius Leal da Silva </para></simplesect>
+<para><simplesect kind="author"><para>S�rgio Luiz Martins Jr. </para></simplesect>
+<simplesect kind="author"><para>Marcos Vin�cius Leal da Silva </para></simplesect>
 <simplesect kind="date"><para>16/07/16 </para></simplesect>
 <simplesect kind="version"><para>1.0</para></simplesect>
 A more elaborated file description. </para>    </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="13"><highlight class="comment">//<sp/>Changelog</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>16/07/2016<sp/>-<sp/>Criação<sp/>do<sp/>dado</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tarefas_8h" kindref="compound">tarefas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tarefas{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Identificador<sp/>da<sp/>tarefa</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>duracao;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Quanto<sp/>tempo<sp/>a<sp/>tarefa<sp/>será<sp/>totalmente<sp/>executada<sp/>-<sp/>C</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>periodo;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Quanto<sp/>tempo<sp/>até<sp/>a<sp/>tarefa<sp/>ser<sp/>executada<sp/>novamente<sp/>-<sp/>T</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado;<sp/><sp/></highlight><highlight class="comment">//<sp/>Qual<sp/>estado<sp/>da<sp/>tarefa</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Função<sp/>cria<sp/>tarefa<sp/>-<sp/>Precisamos<sp/>decidir<sp/>se<sp/>ela<sp/>já<sp/>vai<sp/>ser<sp/>criada<sp/>e<sp/>definida<sp/>ou<sp/>vamos<sp/>ter<sp/>funções<sp/>de<sp/>setar</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal">tarefa_t*<sp/>cria_tarefa()</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefa_t*<sp/>p_tarefa;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>p_tarefa<sp/>=<sp/>(tarefa_t*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(tarefa_t));</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p_tarefa<sp/>==<sp/>NULL){</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>alocar<sp/>tarefa:&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">//<sp/>Changelog</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>16/07/2016<sp/>-<sp/>Cria��o<sp/>do<sp/>dado</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tarefas_8h" kindref="compound">tarefas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tarefas{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>id;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>duracao;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>periodo;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado;<sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fun��o<sp/>cria<sp/>tarefa<sp/>-<sp/>Precisamos<sp/>decidir<sp/>se<sp/>ela<sp/>j� vai<sp/>ser<sp/>criada<sp/>e<sp/>definida<sp/>ou<sp/>vamos<sp/>ter<sp/>fun��es<sp/>de<sp/>setar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="tarefas_8h_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" refkind="member"><highlight class="normal">tarefa_t*<sp/><ref refid="tarefas_8c_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa</ref>()</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefa_t*<sp/>p_tarefa;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>p_tarefa<sp/>=<sp/>(tarefa_t*)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(tarefa_t));</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p_tarefa<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perror(</highlight><highlight class="stringliteral">&quot;Erro<sp/>ao<sp/>alocar<sp/>tarefa:&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(EXIT_FAILURE);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_tarefa;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p_tarefa;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal">uint8_t<sp/>tarefa_get_id(tarefa_t*<sp/>tarefa)</highlight></codeline>
-<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>id;</highlight></codeline>
+<codeline lineno="44" refid="tarefas_8h_1a2b9fb55306eaf268df4740d337ed8c05" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="tarefas_8c_1a2b9fb55306eaf268df4740d337ed8c05" kindref="member">tarefa_get_id</ref>(tarefa_t*<sp/>tarefa)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>id;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>o<sp/>ponteiro<sp/>de<sp/>tarefa<sp/>� v�lido</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>o<sp/>ponteiro<sp/>de<sp/>tarefa<sp/>é<sp/>válido</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>tarefa-&gt;id;</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>tarefa-&gt;id;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal">uint64_t<sp/>tarefa_get_duracao(tarefa_t*<sp/>tarefa)</highlight></codeline>
-<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>duracao;</highlight></codeline>
+<codeline lineno="57" refid="tarefas_8h_1a164c50ca79866487c21cf627e27d207b" refkind="member"><highlight class="normal">uint64_t<sp/><ref refid="tarefas_8c_1a164c50ca79866487c21cf627e27d207b" kindref="member">tarefa_get_duracao</ref>(tarefa_t*<sp/>tarefa)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>duracao;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>o<sp/>ponteiro<sp/>de<sp/>tarefa<sp/>� v�lido</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>o<sp/>ponteiro<sp/>de<sp/>tarefa<sp/>é<sp/>válido</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>duracao<sp/>=<sp/>tarefa-&gt;duracao;</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>duracao<sp/>=<sp/>tarefa-&gt;duracao;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>duracao;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>duracao;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal">uint64_t<sp/>tarefa_get_periodo(tarefa_t*<sp/>tarefa)</highlight></codeline>
-<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>periodo;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>periodo<sp/>=<sp/>tarefa-&gt;periodo;</highlight></codeline>
+<codeline lineno="69" refid="tarefas_8h_1a50daad70095d39fe573bd279cb95c112" refkind="member"><highlight class="normal">uint64_t<sp/><ref refid="tarefas_8c_1a50daad70095d39fe573bd279cb95c112" kindref="member">tarefa_get_periodo</ref>(tarefa_t*<sp/>tarefa)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>uint64_t<sp/>periodo;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>periodo<sp/>=<sp/>tarefa-&gt;periodo;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>periodo;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>periodo;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>tarefa_set_estado(tarefa_t*<sp/>tarefa,<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado)</highlight></codeline>
-<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>o<sp/>ponteiro<sp/>de<sp/>tarefa<sp/>é<sp/>válido</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="tarefas_8h_1ae6140bb7ef769b8117a4973815edbb18" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="tarefas_8c_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado</ref>(tarefa_t*<sp/>tarefa,<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>se<sp/>o<sp/>ponteiro<sp/>de<sp/>tarefa<sp/>� v�lido</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefa-&gt;estado<sp/>=<sp/>estado;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefa-&gt;estado<sp/>=<sp/>estado;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>tarefa_get_estado(tarefa_t*<sp/>tarefa)</highlight></codeline>
-<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>estado<sp/>=<sp/>tarefa-&gt;estado;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85" refid="tarefas_8h_1af43446675d28da684f4a104d2038aef6" refkind="member"><highlight class="normal"><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/><ref refid="tarefas_8c_1af43446675d28da684f4a104d2038aef6" kindref="member">tarefa_get_estado</ref>(tarefa_t*<sp/>tarefa)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref><sp/>estado;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>estado<sp/>=<sp/>tarefa-&gt;estado;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estado;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c"/>
   </compounddef>

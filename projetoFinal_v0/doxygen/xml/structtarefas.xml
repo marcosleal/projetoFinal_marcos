@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="27" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="27" bodyend="-1"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="24" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtarefas_1a1efaa0374fdb3e4cf0dbd6a4a7e0cff9" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -22,12 +22,12 @@
         <argsstring></argsstring>
         <name>duracao</name>
         <briefdescription>
-        </briefdescription>
+<para>Identificador da tarefa. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="28" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="25" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtarefas_1a9e6749c19ebed7fa30f698caf2f820ba" prot="public" static="no" mutable="no">
         <type>uint64_t</type>
@@ -35,12 +35,12 @@
         <argsstring></argsstring>
         <name>periodo</name>
         <briefdescription>
-        </briefdescription>
+<para>Quanto tempo a tarefa será totalmente executada - C. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="29" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="29" bodyend="-1"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="26" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structtarefas_1aca7141ec0b089f3a5b6c9e3e95206fa3" prot="public" static="no" mutable="no">
         <type><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74b" kindref="member">ESTADO_TAREFA</ref></type>
@@ -48,19 +48,19 @@
         <argsstring></argsstring>
         <name>estado</name>
         <briefdescription>
-        </briefdescription>
+<para>Quanto tempo até a tarefa ser executada novamente - T. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="30" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="30" bodyend="-1"/>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="27" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="27" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="26" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="26" bodyend="31"/>
+    <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" line="23" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/tarefas.c" bodystart="23" bodyend="28"/>
     <listofallmembers>
       <member refid="structtarefas_1a1efaa0374fdb3e4cf0dbd6a4a7e0cff9" prot="public" virt="non-virtual"><scope>tarefas</scope><name>duracao</name></member>
       <member refid="structtarefas_1aca7141ec0b089f3a5b6c9e3e95206fa3" prot="public" virt="non-virtual"><scope>tarefas</scope><name>estado</name></member>

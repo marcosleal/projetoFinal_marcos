@@ -5,6 +5,7 @@ var NAVTREE =
       [ "Lista de ficheiros", "files.html", "files" ],
       [ "Globais", "globals.html", [
         [ "Tudo", "globals.html", null ],
+        [ "Funções", "globals_func.html", null ],
         [ "Enumerações", "globals_enum.html", null ],
         [ "Valores de enumerações", "globals_eval.html", null ]
       ] ]

@@ -108,7 +108,7 @@ $(document).ready(function(){initNavTree('tarefas_8c.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Funções para manipulação das tarefas.  
+<p>Fun��es para manipula��o das tarefas.  
 <a href="#details">Mais...</a></p>
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
@@ -117,40 +117,207 @@ $(document).ready(function(){initNavTree('tarefas_8c.html','');});
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funções</h2></td></tr>
-<tr class="memitem:ae02cb9d6b8c7a82e2b36195cc9afb9d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae02cb9d6b8c7a82e2b36195cc9afb9d5"></a>
-tarefa_t *&#160;</td><td class="memItemRight" valign="bottom"><b>cria_tarefa</b> ()</td></tr>
+<tr class="memitem:ae02cb9d6b8c7a82e2b36195cc9afb9d5"><td class="memItemLeft" align="right" valign="top">tarefa_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tarefas_8c.html#ae02cb9d6b8c7a82e2b36195cc9afb9d5">cria_tarefa</a> ()</td></tr>
+<tr class="memdesc:ae02cb9d6b8c7a82e2b36195cc9afb9d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Criação de tarefas, indicando C e T.  <a href="#ae02cb9d6b8c7a82e2b36195cc9afb9d5">Mais...</a><br /></td></tr>
 <tr class="separator:ae02cb9d6b8c7a82e2b36195cc9afb9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b9fb55306eaf268df4740d337ed8c05"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b9fb55306eaf268df4740d337ed8c05"></a>
-uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>tarefa_get_id</b> (tarefa_t *tarefa)</td></tr>
+<tr class="memitem:a2b9fb55306eaf268df4740d337ed8c05"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tarefas_8c.html#a2b9fb55306eaf268df4740d337ed8c05">tarefa_get_id</a> (tarefa_t *tarefa)</td></tr>
+<tr class="memdesc:a2b9fb55306eaf268df4740d337ed8c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requisição do id da tarefa.  <a href="#a2b9fb55306eaf268df4740d337ed8c05">Mais...</a><br /></td></tr>
 <tr class="separator:a2b9fb55306eaf268df4740d337ed8c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a164c50ca79866487c21cf627e27d207b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a164c50ca79866487c21cf627e27d207b"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tarefa_get_duracao</b> (tarefa_t *tarefa)</td></tr>
+<tr class="memitem:a164c50ca79866487c21cf627e27d207b"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tarefas_8c.html#a164c50ca79866487c21cf627e27d207b">tarefa_get_duracao</a> (tarefa_t *tarefa)</td></tr>
+<tr class="memdesc:a164c50ca79866487c21cf627e27d207b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requisição da duração (C) da tarefa.  <a href="#a164c50ca79866487c21cf627e27d207b">Mais...</a><br /></td></tr>
 <tr class="separator:a164c50ca79866487c21cf627e27d207b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50daad70095d39fe573bd279cb95c112"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50daad70095d39fe573bd279cb95c112"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>tarefa_get_periodo</b> (tarefa_t *tarefa)</td></tr>
+<tr class="memitem:a50daad70095d39fe573bd279cb95c112"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tarefas_8c.html#a50daad70095d39fe573bd279cb95c112">tarefa_get_periodo</a> (tarefa_t *tarefa)</td></tr>
+<tr class="memdesc:a50daad70095d39fe573bd279cb95c112"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requisição do período (T) da tarefa.  <a href="#a50daad70095d39fe573bd279cb95c112">Mais...</a><br /></td></tr>
 <tr class="separator:a50daad70095d39fe573bd279cb95c112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6140bb7ef769b8117a4973815edbb18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6140bb7ef769b8117a4973815edbb18"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>tarefa_set_estado</b> (tarefa_t *tarefa, <a class="el" href="tarefas_8h.html#a71c25d527d6749ee6e00b8f6e139c74b">ESTADO_TAREFA</a> estado)</td></tr>
+<tr class="memitem:ae6140bb7ef769b8117a4973815edbb18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tarefas_8c.html#ae6140bb7ef769b8117a4973815edbb18">tarefa_set_estado</a> (tarefa_t *tarefa, <a class="el" href="tarefas_8h.html#a71c25d527d6749ee6e00b8f6e139c74b">ESTADO_TAREFA</a> estado)</td></tr>
+<tr class="memdesc:ae6140bb7ef769b8117a4973815edbb18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estabelece o estado da tarefa.  <a href="#ae6140bb7ef769b8117a4973815edbb18">Mais...</a><br /></td></tr>
 <tr class="separator:ae6140bb7ef769b8117a4973815edbb18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af43446675d28da684f4a104d2038aef6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af43446675d28da684f4a104d2038aef6"></a>
-<a class="el" href="tarefas_8h.html#a71c25d527d6749ee6e00b8f6e139c74b">ESTADO_TAREFA</a>&#160;</td><td class="memItemRight" valign="bottom"><b>tarefa_get_estado</b> (tarefa_t *tarefa)</td></tr>
+<tr class="memitem:af43446675d28da684f4a104d2038aef6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="tarefas_8h.html#a71c25d527d6749ee6e00b8f6e139c74b">ESTADO_TAREFA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tarefas_8c.html#af43446675d28da684f4a104d2038aef6">tarefa_get_estado</a> (tarefa_t *tarefa)</td></tr>
+<tr class="memdesc:af43446675d28da684f4a104d2038aef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requisição do estado da tarefa.  <a href="#af43446675d28da684f4a104d2038aef6">Mais...</a><br /></td></tr>
 <tr class="separator:af43446675d28da684f4a104d2038aef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><p>Funções para manipulação das tarefas. </p>
-<dl class="section author"><dt>Autor</dt><dd>Sérgio Luiz Martins Jr. </dd>
+<div class="textblock"><p>Fun��es para manipula��o das tarefas. </p>
+<dl class="section author"><dt>Autor</dt><dd>S�rgio Luiz Martins Jr. </dd>
 <dd>
-Marcos Vinícius Leal da Silva </dd></dl>
+Marcos Vin�cius Leal da Silva </dd></dl>
 <dl class="section date"><dt>Data</dt><dd>16/07/16 </dd></dl>
 <dl class="section version"><dt>Versão</dt><dd>1.0</dd></dl>
 <p>A more elaborated file description. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Documentação das funções</h2>
+<a class="anchor" id="ae02cb9d6b8c7a82e2b36195cc9afb9d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tarefa_t* cria_tarefa </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Criação de tarefas, indicando C e T. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Vazio</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Um ponteiro do tipo tarefa_t </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="tarefas_8h.html#a2b9fb55306eaf268df4740d337ed8c05" title="Requisição do id da tarefa. ">tarefa_get_id()</a>, <a class="el" href="tarefas_8h.html#a164c50ca79866487c21cf627e27d207b" title="Requisição da duração (C) da tarefa. ">tarefa_get_duracao()</a>, <a class="el" href="tarefas_8h.html#a50daad70095d39fe573bd279cb95c112" title="Requisição do período (T) da tarefa. ">tarefa_get_periodo()</a>, <a class="el" href="tarefas_8h.html#ae6140bb7ef769b8117a4973815edbb18" title="Estabelece o estado da tarefa. ">tarefa_set_estado()</a>, <a class="el" href="tarefas_8h.html#af43446675d28da684f4a104d2038aef6" title="Requisição do estado da tarefa. ">tarefa_get_estado()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a164c50ca79866487c21cf627e27d207b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t tarefa_get_duracao </td>
+          <td>(</td>
+          <td class="paramtype">tarefa_t *&#160;</td>
+          <td class="paramname"><em>tarefa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requisição da duração (C) da tarefa. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefa</td><td>um ponteiro que representa o endereço da tarefa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Inteiro de 64 bits não sinalizado </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="tarefas_8h.html#ae02cb9d6b8c7a82e2b36195cc9afb9d5" title="Criação de tarefas, indicando C e T. ">cria_tarefa()</a>, <a class="el" href="tarefas_8h.html#a2b9fb55306eaf268df4740d337ed8c05" title="Requisição do id da tarefa. ">tarefa_get_id()</a>, <a class="el" href="tarefas_8h.html#a50daad70095d39fe573bd279cb95c112" title="Requisição do período (T) da tarefa. ">tarefa_get_periodo()</a>, <a class="el" href="tarefas_8h.html#ae6140bb7ef769b8117a4973815edbb18" title="Estabelece o estado da tarefa. ">tarefa_set_estado()</a>, <a class="el" href="tarefas_8h.html#af43446675d28da684f4a104d2038aef6" title="Requisição do estado da tarefa. ">tarefa_get_estado()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af43446675d28da684f4a104d2038aef6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="tarefas_8h.html#a71c25d527d6749ee6e00b8f6e139c74b">ESTADO_TAREFA</a> tarefa_get_estado </td>
+          <td>(</td>
+          <td class="paramtype">tarefa_t *&#160;</td>
+          <td class="paramname"><em>tarefa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requisição do estado da tarefa. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefa</td><td>um ponteiro que representa o endereço da tarefa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>estado pondendo ser OCIOSO, EXECUTANDO, PRONTA ou PARADA </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="tarefas_8h.html#ae02cb9d6b8c7a82e2b36195cc9afb9d5" title="Criação de tarefas, indicando C e T. ">cria_tarefa()</a>, <a class="el" href="tarefas_8h.html#a2b9fb55306eaf268df4740d337ed8c05" title="Requisição do id da tarefa. ">tarefa_get_id()</a>, <a class="el" href="tarefas_8h.html#a164c50ca79866487c21cf627e27d207b" title="Requisição da duração (C) da tarefa. ">tarefa_get_duracao()</a>, <a class="el" href="tarefas_8h.html#a50daad70095d39fe573bd279cb95c112" title="Requisição do período (T) da tarefa. ">tarefa_get_periodo()</a>, <a class="el" href="tarefas_8h.html#ae6140bb7ef769b8117a4973815edbb18" title="Estabelece o estado da tarefa. ">tarefa_set_estado()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2b9fb55306eaf268df4740d337ed8c05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t tarefa_get_id </td>
+          <td>(</td>
+          <td class="paramtype">tarefa_t *&#160;</td>
+          <td class="paramname"><em>tarefa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requisição do id da tarefa. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefa</td><td>um ponteiro que representa o endereço da tarefa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Inteiro de 8 bits não sinalizado </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="tarefas_8h.html#ae02cb9d6b8c7a82e2b36195cc9afb9d5" title="Criação de tarefas, indicando C e T. ">cria_tarefa()</a>, <a class="el" href="tarefas_8h.html#a164c50ca79866487c21cf627e27d207b" title="Requisição da duração (C) da tarefa. ">tarefa_get_duracao()</a>, <a class="el" href="tarefas_8h.html#a50daad70095d39fe573bd279cb95c112" title="Requisição do período (T) da tarefa. ">tarefa_get_periodo()</a>, <a class="el" href="tarefas_8h.html#ae6140bb7ef769b8117a4973815edbb18" title="Estabelece o estado da tarefa. ">tarefa_set_estado()</a>, <a class="el" href="tarefas_8h.html#af43446675d28da684f4a104d2038aef6" title="Requisição do estado da tarefa. ">tarefa_get_estado()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a50daad70095d39fe573bd279cb95c112"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint64_t tarefa_get_periodo </td>
+          <td>(</td>
+          <td class="paramtype">tarefa_t *&#160;</td>
+          <td class="paramname"><em>tarefa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requisição do período (T) da tarefa. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefa</td><td>um ponteiro que representa o endereço da tarefa </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Inteiro de 64 bits não sinalizado </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="tarefas_8h.html#ae02cb9d6b8c7a82e2b36195cc9afb9d5" title="Criação de tarefas, indicando C e T. ">cria_tarefa()</a>, <a class="el" href="tarefas_8h.html#a2b9fb55306eaf268df4740d337ed8c05" title="Requisição do id da tarefa. ">tarefa_get_id()</a>, <a class="el" href="tarefas_8h.html#a164c50ca79866487c21cf627e27d207b" title="Requisição da duração (C) da tarefa. ">tarefa_get_duracao()</a>, <a class="el" href="tarefas_8h.html#ae6140bb7ef769b8117a4973815edbb18" title="Estabelece o estado da tarefa. ">tarefa_set_estado()</a>, <a class="el" href="tarefas_8h.html#af43446675d28da684f4a104d2038aef6" title="Requisição do estado da tarefa. ">tarefa_get_estado()</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae6140bb7ef769b8117a4973815edbb18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void tarefa_set_estado </td>
+          <td>(</td>
+          <td class="paramtype">tarefa_t *&#160;</td>
+          <td class="paramname"><em>tarefa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="tarefas_8h.html#a71c25d527d6749ee6e00b8f6e139c74b">ESTADO_TAREFA</a>&#160;</td>
+          <td class="paramname"><em>estado</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Estabelece o estado da tarefa. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tarefa</td><td>um ponteiro que representa o endereço da tarefa </td></tr>
+    <tr><td class="paramname">estado</td><td>pondendo ser OCIOSO, EXECUTANDO, PRONTA ou PARADA </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>vazio </dd></dl>
+<dl class="section see"><dt>Veja também</dt><dd><a class="el" href="tarefas_8h.html#ae02cb9d6b8c7a82e2b36195cc9afb9d5" title="Criação de tarefas, indicando C e T. ">cria_tarefa()</a>, <a class="el" href="tarefas_8h.html#a2b9fb55306eaf268df4740d337ed8c05" title="Requisição do id da tarefa. ">tarefa_get_id()</a>, <a class="el" href="tarefas_8h.html#a164c50ca79866487c21cf627e27d207b" title="Requisição da duração (C) da tarefa. ">tarefa_get_duracao()</a>, <a class="el" href="tarefas_8h.html#a50daad70095d39fe573bd279cb95c112" title="Requisição do período (T) da tarefa. ">tarefa_get_periodo()</a>, <a class="el" href="tarefas_8h.html#af43446675d28da684f4a104d2038aef6" title="Requisição do estado da tarefa. ">tarefa_get_estado()</a> </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="tarefas_8c.html">tarefas.c</a></li>
-    <li class="footer">Gerado em Sábado, 16 de Julho de 2016 18:59:25 para projetoFinal_v0 por
+    <li class="footer">Gerado em Sábado, 16 de Julho de 2016 22:45:53 para projetoFinal_v0 por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

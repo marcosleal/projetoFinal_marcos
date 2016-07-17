@@ -48,10 +48,10 @@
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Objetivo: Criar o TaD que ira ser utilizado para conter as informaÃ§Ãµes das tarefas. </para>    </briefdescription>
+<para>Objetivo: Criar o TaD que ira ser utilizado para conter as informações das tarefas. </para>    </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>SÃ©rgio Luiz Martins Jr. </para></simplesect>
-<simplesect kind="author"><para>Marcos VinÃ­cius Leal da Silva </para></simplesect>
+<para><simplesect kind="author"><para>Sérgio Luiz Martins Jr. </para></simplesect>
+<simplesect kind="author"><para>Marcos Vinícius Leal da Silva </para></simplesect>
 <simplesect kind="date"><para>16/07/16 </para></simplesect>
 <simplesect kind="version"><para>1.0</para></simplesect>
 A more elaborated file description. </para>    </detaileddescription>
@@ -59,7 +59,7 @@ A more elaborated file description. </para>    </detaileddescription>
 <codeline lineno="1"></codeline>
 <codeline lineno="12"><highlight class="comment">//<sp/>Data:<sp/>16/07/2016</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Objetivo:<sp/>Criar<sp/>o<sp/>TaD<sp/>que<sp/>ira<sp/>ser<sp/>utilizado<sp/>para<sp/>conter<sp/>as<sp/>informaÃ§Ãµes<sp/>das<sp/>tarefas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Objetivo:<sp/>Criar<sp/>o<sp/>TaD<sp/>que<sp/>ira<sp/>ser<sp/>utilizado<sp/>para<sp/>conter<sp/>as<sp/>informações<sp/>das<sp/>tarefas</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -71,9 +71,9 @@ A more elaborated file description. </para>    </detaileddescription>
 <codeline lineno="23"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefa_t*<sp/>tarefaTeste;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefaTeste<sp/>=<sp/>cria_tarefa();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefaTeste<sp/>=<sp/><ref refid="tarefas_8c_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa</ref>();</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefa_set_estado(tarefaTeste,<sp/>OCIOSA);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8c_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado</ref>(tarefaTeste,<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9" kindref="member">OCIOSA</ref>);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">}</highlight></codeline>

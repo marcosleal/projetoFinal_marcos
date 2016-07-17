@@ -2,8 +2,9 @@ var NAVTREEINDEX0 =
 {
 "files.html":[0,0],
 "globals.html":[0,1,0],
-"globals_enum.html":[0,1,1],
-"globals_eval.html":[0,1,2],
+"globals_enum.html":[0,1,2],
+"globals_eval.html":[0,1,3],
+"globals_func.html":[0,1,1],
 "index.html":[],
 "main_8c.html":[0,0,0],
 "main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4":[0,0,0,0],

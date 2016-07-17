@@ -98,7 +98,7 @@ WARN_LOGFILE            = "C:\Users\Marcos\Documents\GitHub\projetoFinal_marcos\
 INPUT                  = \
 	"..\main.c" \
 	"..\tarefas.c" \
-	"..\tarefas.h"
+	"..\tarefas.h" \
 INPUT_ENCODING         = ISO-8859-15
 FILE_PATTERNS          =
 RECURSIVE              = NO

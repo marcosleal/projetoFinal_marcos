@@ -2,7 +2,7 @@
 \label{tarefas_8h}\index{tarefas.\+h@{tarefas.\+h}}
 
 
-CabeÃ§alho de FunÃ§Ãµes para manipulaÃ§Ã£o das tarefas.  
+Cabeçalho de Funções para manipulação das tarefas.  
 
 
 {\ttfamily \#include $<$inttypes.\+h$>$}\\*
@@ -15,7 +15,7 @@ typedef struct tarefas {\bfseries tarefa\+\_\+t}\hypertarget{tarefas_8h_a1839d96
 \subsection*{Enumerações}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} \{ {\bfseries O\+C\+I\+O\+SA}, 
+enum \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} \{ \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9}{O\+C\+I\+O\+SA}, 
 \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617}{E\+X\+E\+C\+U\+T\+A\+N\+DO}, 
 \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489}{P\+R\+O\+N\+TA}, 
 \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2}{P\+A\+R\+A\+DA}
@@ -24,33 +24,27 @@ enum \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+
 \subsection*{Funções}
 \begin{DoxyCompactItemize}
 \item 
-tarefa\+\_\+t $\ast$ {\bfseries cria\+\_\+tarefa} ()\hypertarget{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{}\label{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}
-
-\item 
-uint8\+\_\+t {\bfseries tarefa\+\_\+get\+\_\+id} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{}\label{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}
-
-\item 
-uint64\+\_\+t {\bfseries tarefa\+\_\+get\+\_\+duracao} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{}\label{tarefas_8h_a164c50ca79866487c21cf627e27d207b}
-
-\item 
-uint64\+\_\+t {\bfseries tarefa\+\_\+get\+\_\+periodo} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{}\label{tarefas_8h_a50daad70095d39fe573bd279cb95c112}
-
-\item 
-void {\bfseries tarefa\+\_\+set\+\_\+estado} (tarefa\+\_\+t $\ast$tarefa, \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} estado)\hypertarget{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{}\label{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}
-
-\item 
-\hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} {\bfseries tarefa\+\_\+get\+\_\+estado} (tarefa\+\_\+t $\ast$tarefa)\hypertarget{tarefas_8h_af43446675d28da684f4a104d2038aef6}{}\label{tarefas_8h_af43446675d28da684f4a104d2038aef6}
-
-\end{DoxyCompactItemize}
+tarefa\+\_\+t $\ast$ \hyperlink{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\+\_\+tarefa} ()
+\begin{DoxyCompactList}\small\item\em Criação de tarefas, indicando C e T. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\+\_\+get\+\_\+id} (tarefa\+\_\+t $\ast$tarefa)
+\begin{DoxyCompactList}\small\item\em Requisição do id da tarefa. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{tarefa\+\_\+get\+\_\+duracao} (tarefa\+\_\+t $\ast$tarefa)
+\begin{DoxyCompactList}\small\item\em Requisição da duração (C) da tarefa. \end{DoxyCompactList}\item 
+uint64\+\_\+t \hyperlink{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{tarefa\+\_\+get\+\_\+periodo} (tarefa\+\_\+t $\ast$tarefa)
+\begin{DoxyCompactList}\small\item\em Requisição do período (T) da tarefa. \end{DoxyCompactList}\item 
+void \hyperlink{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{tarefa\+\_\+set\+\_\+estado} (tarefa\+\_\+t $\ast$tarefa, \hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} estado)
+\begin{DoxyCompactList}\small\item\em Estabelece o estado da tarefa. \end{DoxyCompactList}\item 
+\hyperlink{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} \hyperlink{tarefas_8h_af43446675d28da684f4a104d2038aef6}{tarefa\+\_\+get\+\_\+estado} (tarefa\+\_\+t $\ast$tarefa)
+\begin{DoxyCompactList}\small\item\em Requisição do estado da tarefa. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descrição detalhada}
-CabeÃ§alho de FunÃ§Ãµes para manipulaÃ§Ã£o das tarefas. 
+Cabeçalho de Funções para manipulação das tarefas. 
 
 \begin{DoxyAuthor}{Autor}
-SÃ©rgio Luiz Martins Jr. 
+Sérgio Luiz Martins Jr. 
 
-Marcos VinÃ­cius Leal da Silva 
+Marcos Vinícius Leal da Silva 
 \end{DoxyAuthor}
 \begin{DoxyDate}{Data}
 16/07/16 
@@ -64,14 +58,154 @@ A more elaborated file description.
 \index{tarefas.\+h@{tarefas.\+h}!E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA@{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}}
 \index{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA@{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}!tarefas.\+h@{tarefas.\+h}}
 \subsubsection[{\texorpdfstring{E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}{ESTADO_TAREFA}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}}\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74b}
-Indica qual Ã© o estado da tarefa, sendo\+: \begin{Desc}
+Indica qual é o estado da tarefa, sendo\+: \begin{Desc}
 \item[Valores de enumerações]\par
 \begin{description}
-\index{E\+X\+E\+C\+U\+T\+A\+N\+DO@{E\+X\+E\+C\+U\+T\+A\+N\+DO}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!E\+X\+E\+C\+U\+T\+A\+N\+DO@{E\+X\+E\+C\+U\+T\+A\+N\+DO}}\item[{\em 
+\index{O\+C\+I\+O\+SA@{O\+C\+I\+O\+SA}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!O\+C\+I\+O\+SA@{O\+C\+I\+O\+SA}}\item[{\em 
+O\+C\+I\+O\+SA\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9}
+}]Nada a fazer. \index{E\+X\+E\+C\+U\+T\+A\+N\+DO@{E\+X\+E\+C\+U\+T\+A\+N\+DO}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!E\+X\+E\+C\+U\+T\+A\+N\+DO@{E\+X\+E\+C\+U\+T\+A\+N\+DO}}\item[{\em 
 E\+X\+E\+C\+U\+T\+A\+N\+DO\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba83adf969b01a26b7305d8ee396dd5617}
-}]$<$ Nada a fazer $>$ \index{P\+R\+O\+N\+TA@{P\+R\+O\+N\+TA}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!P\+R\+O\+N\+TA@{P\+R\+O\+N\+TA}}\item[{\em 
+}]Em execução. \index{P\+R\+O\+N\+TA@{P\+R\+O\+N\+TA}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!P\+R\+O\+N\+TA@{P\+R\+O\+N\+TA}}\item[{\em 
 P\+R\+O\+N\+TA\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba4e96f04e3d984d8e12a966a1da742489}
-}]$<$ Em execuÃ§Ã£o $>$ \index{P\+A\+R\+A\+DA@{P\+A\+R\+A\+DA}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!P\+A\+R\+A\+DA@{P\+A\+R\+A\+DA}}\item[{\em 
+}]Pronta para ser executada. \index{P\+A\+R\+A\+DA@{P\+A\+R\+A\+DA}!tarefas.\+h@{tarefas.\+h}}\index{tarefas.\+h@{tarefas.\+h}!P\+A\+R\+A\+DA@{P\+A\+R\+A\+DA}}\item[{\em 
 P\+A\+R\+A\+DA\hypertarget{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2}{}\label{tarefas_8h_a71c25d527d6749ee6e00b8f6e139c74ba5aaff91710e79b3699107e480226f6a2}
-}]$<$ Pronta para ser executada $>$ $<$ Tarefa parada por outra com maior prioridade $>$ \end{description}
+}]Tarefa parada por outra com maior prioridade. \end{description}
 \end{Desc}
+
+
+\subsection{Documentação das funções}
+\index{tarefas.\+h@{tarefas.\+h}!cria\+\_\+tarefa@{cria\+\_\+tarefa}}
+\index{cria\+\_\+tarefa@{cria\+\_\+tarefa}!tarefas.\+h@{tarefas.\+h}}
+\subsubsection[{\texorpdfstring{cria\+\_\+tarefa()}{cria_tarefa()}}]{\setlength{\rightskip}{0pt plus 5cm}tarefa\+\_\+t$\ast$ cria\+\_\+tarefa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{}\label{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}
+
+
+Criação de tarefas, indicando C e T. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em Vazio} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Um ponteiro do tipo tarefa\+\_\+t 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\+\_\+get\+\_\+id()}, \hyperlink{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{tarefa\+\_\+get\+\_\+duracao()}, \hyperlink{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{tarefa\+\_\+get\+\_\+periodo()}, \hyperlink{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{tarefa\+\_\+set\+\_\+estado()}, \hyperlink{tarefas_8h_af43446675d28da684f4a104d2038aef6}{tarefa\+\_\+get\+\_\+estado()} 
+\end{DoxySeeAlso}
+\index{tarefas.\+h@{tarefas.\+h}!tarefa\+\_\+get\+\_\+duracao@{tarefa\+\_\+get\+\_\+duracao}}
+\index{tarefa\+\_\+get\+\_\+duracao@{tarefa\+\_\+get\+\_\+duracao}!tarefas.\+h@{tarefas.\+h}}
+\subsubsection[{\texorpdfstring{tarefa\+\_\+get\+\_\+duracao(tarefa\+\_\+t $\ast$tarefa)}{tarefa_get_duracao(tarefa_t *tarefa)}}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t tarefa\+\_\+get\+\_\+duracao (
+\begin{DoxyParamCaption}
+\item[{tarefa\+\_\+t $\ast$}]{tarefa}
+\end{DoxyParamCaption}
+)}\hypertarget{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{}\label{tarefas_8h_a164c50ca79866487c21cf627e27d207b}
+
+
+Requisição da duração (C) da tarefa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & um ponteiro que representa o endereço da tarefa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Inteiro de 64 bits não sinalizado 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\+\_\+tarefa()}, \hyperlink{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\+\_\+get\+\_\+id()}, \hyperlink{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{tarefa\+\_\+get\+\_\+periodo()}, \hyperlink{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{tarefa\+\_\+set\+\_\+estado()}, \hyperlink{tarefas_8h_af43446675d28da684f4a104d2038aef6}{tarefa\+\_\+get\+\_\+estado()} 
+\end{DoxySeeAlso}
+\index{tarefas.\+h@{tarefas.\+h}!tarefa\+\_\+get\+\_\+estado@{tarefa\+\_\+get\+\_\+estado}}
+\index{tarefa\+\_\+get\+\_\+estado@{tarefa\+\_\+get\+\_\+estado}!tarefas.\+h@{tarefas.\+h}}
+\subsubsection[{\texorpdfstring{tarefa\+\_\+get\+\_\+estado(tarefa\+\_\+t $\ast$tarefa)}{tarefa_get_estado(tarefa_t *tarefa)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA} tarefa\+\_\+get\+\_\+estado (
+\begin{DoxyParamCaption}
+\item[{tarefa\+\_\+t $\ast$}]{tarefa}
+\end{DoxyParamCaption}
+)}\hypertarget{tarefas_8h_af43446675d28da684f4a104d2038aef6}{}\label{tarefas_8h_af43446675d28da684f4a104d2038aef6}
+
+
+Requisição do estado da tarefa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & um ponteiro que representa o endereço da tarefa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+estado pondendo ser O\+C\+I\+O\+SO, E\+X\+E\+C\+U\+T\+A\+N\+DO, P\+R\+O\+N\+TA ou P\+A\+R\+A\+DA 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\+\_\+tarefa()}, \hyperlink{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\+\_\+get\+\_\+id()}, \hyperlink{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{tarefa\+\_\+get\+\_\+duracao()}, \hyperlink{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{tarefa\+\_\+get\+\_\+periodo()}, \hyperlink{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{tarefa\+\_\+set\+\_\+estado()} 
+\end{DoxySeeAlso}
+\index{tarefas.\+h@{tarefas.\+h}!tarefa\+\_\+get\+\_\+id@{tarefa\+\_\+get\+\_\+id}}
+\index{tarefa\+\_\+get\+\_\+id@{tarefa\+\_\+get\+\_\+id}!tarefas.\+h@{tarefas.\+h}}
+\subsubsection[{\texorpdfstring{tarefa\+\_\+get\+\_\+id(tarefa\+\_\+t $\ast$tarefa)}{tarefa_get_id(tarefa_t *tarefa)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t tarefa\+\_\+get\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{tarefa\+\_\+t $\ast$}]{tarefa}
+\end{DoxyParamCaption}
+)}\hypertarget{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{}\label{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}
+
+
+Requisição do id da tarefa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & um ponteiro que representa o endereço da tarefa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Inteiro de 8 bits não sinalizado 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\+\_\+tarefa()}, \hyperlink{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{tarefa\+\_\+get\+\_\+duracao()}, \hyperlink{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{tarefa\+\_\+get\+\_\+periodo()}, \hyperlink{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{tarefa\+\_\+set\+\_\+estado()}, \hyperlink{tarefas_8h_af43446675d28da684f4a104d2038aef6}{tarefa\+\_\+get\+\_\+estado()} 
+\end{DoxySeeAlso}
+\index{tarefas.\+h@{tarefas.\+h}!tarefa\+\_\+get\+\_\+periodo@{tarefa\+\_\+get\+\_\+periodo}}
+\index{tarefa\+\_\+get\+\_\+periodo@{tarefa\+\_\+get\+\_\+periodo}!tarefas.\+h@{tarefas.\+h}}
+\subsubsection[{\texorpdfstring{tarefa\+\_\+get\+\_\+periodo(tarefa\+\_\+t $\ast$tarefa)}{tarefa_get_periodo(tarefa_t *tarefa)}}]{\setlength{\rightskip}{0pt plus 5cm}uint64\+\_\+t tarefa\+\_\+get\+\_\+periodo (
+\begin{DoxyParamCaption}
+\item[{tarefa\+\_\+t $\ast$}]{tarefa}
+\end{DoxyParamCaption}
+)}\hypertarget{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{}\label{tarefas_8h_a50daad70095d39fe573bd279cb95c112}
+
+
+Requisição do período (T) da tarefa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & um ponteiro que representa o endereço da tarefa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+Inteiro de 64 bits não sinalizado 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\+\_\+tarefa()}, \hyperlink{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\+\_\+get\+\_\+id()}, \hyperlink{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{tarefa\+\_\+get\+\_\+duracao()}, \hyperlink{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{tarefa\+\_\+set\+\_\+estado()}, \hyperlink{tarefas_8h_af43446675d28da684f4a104d2038aef6}{tarefa\+\_\+get\+\_\+estado()} 
+\end{DoxySeeAlso}
+\index{tarefas.\+h@{tarefas.\+h}!tarefa\+\_\+set\+\_\+estado@{tarefa\+\_\+set\+\_\+estado}}
+\index{tarefa\+\_\+set\+\_\+estado@{tarefa\+\_\+set\+\_\+estado}!tarefas.\+h@{tarefas.\+h}}
+\subsubsection[{\texorpdfstring{tarefa\+\_\+set\+\_\+estado(tarefa\+\_\+t $\ast$tarefa, E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+F\+A estado)}{tarefa_set_estado(tarefa_t *tarefa, ESTADO_TAREFA estado)}}]{\setlength{\rightskip}{0pt plus 5cm}void tarefa\+\_\+set\+\_\+estado (
+\begin{DoxyParamCaption}
+\item[{tarefa\+\_\+t $\ast$}]{tarefa, }
+\item[{{\bf E\+S\+T\+A\+D\+O\+\_\+\+T\+A\+R\+E\+FA}}]{estado}
+\end{DoxyParamCaption}
+)}\hypertarget{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}{}\label{tarefas_8h_ae6140bb7ef769b8117a4973815edbb18}
+
+
+Estabelece o estado da tarefa. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tarefa} & um ponteiro que representa o endereço da tarefa \\
+\hline
+{\em estado} & pondendo ser O\+C\+I\+O\+SO, E\+X\+E\+C\+U\+T\+A\+N\+DO, P\+R\+O\+N\+TA ou P\+A\+R\+A\+DA \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+vazio 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Veja também}
+\hyperlink{tarefas_8h_ae02cb9d6b8c7a82e2b36195cc9afb9d5}{cria\+\_\+tarefa()}, \hyperlink{tarefas_8h_a2b9fb55306eaf268df4740d337ed8c05}{tarefa\+\_\+get\+\_\+id()}, \hyperlink{tarefas_8h_a164c50ca79866487c21cf627e27d207b}{tarefa\+\_\+get\+\_\+duracao()}, \hyperlink{tarefas_8h_a50daad70095d39fe573bd279cb95c112}{tarefa\+\_\+get\+\_\+periodo()}, \hyperlink{tarefas_8h_af43446675d28da684f4a104d2038aef6}{tarefa\+\_\+get\+\_\+estado()} 
+\end{DoxySeeAlso}

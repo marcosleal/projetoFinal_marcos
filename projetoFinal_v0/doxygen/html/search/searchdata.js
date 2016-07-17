@@ -1,24 +1,27 @@
 var indexSectionsWithContent =
 {
-  0: "empt",
+  0: "cemopt",
   1: "mt",
-  2: "e",
-  3: "ep"
+  2: "ct",
+  3: "e",
+  4: "eop"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "files",
-  2: "enums",
-  3: "enumvalues"
+  2: "functions",
+  3: "enums",
+  4: "enumvalues"
 };
 
 var indexSectionLabels =
 {
   0: "Tudo",
   1: "Ficheiros",
-  2: "Enumerações",
-  3: "Valores de enumerações"
+  2: "Funções",
+  3: "Enumerações",
+  4: "Valores de enumerações"
 };
 
