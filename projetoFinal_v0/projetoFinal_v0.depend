@@ -1,15 +1,31 @@
 # depslib dependency file v1.0
-1468674752 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\main.c
+1468699803 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\main.c
 	<stdio.h>
 	<stdlib.h>
 	"tarefas.h"
 
-1468675619 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.h
+1468704971 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.h
 	<inttypes.h>
 
-1468674933 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.c
+1468705000 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\tarefas.c
 	<stdio.h>
 	<stdlib.h>
 	<inttypes.h>
 	"tarefas.h"
+
+1468078414 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\lista_enc.c
+	<stdio.h>
+	<stdlib.h>
+	"lista_enc.h"
+	"no.h"
+
+1468706758 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\lista_enc.h
+	"no.h"
+
+1468706760 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\no.h
+
+1467931106 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\no.c
+	<stdio.h>
+	<stdlib.h>
+	"no.h"
 

@@ -16,8 +16,8 @@ struct tarefas{
     ESTADO_TAREFA estado;  // Qual estado da tarefa
 };
 
-// Função cria tarefa - Precisamos decidir se ela já vai ser criada e definida ou vamos ter funções de setar
-tarefa_t* cria_tarefa()
+// Função cria tarefa
+tarefa_t* cria_tarefa(uint8_t id, uint64_t duracao, uint64_t periodo)
 {
     tarefa_t* p_tarefa;
 
@@ -26,6 +26,11 @@ tarefa_t* cria_tarefa()
         perror("Erro ao alocar tarefa:");
         exit(EXIT_FAILURE);
     }
+
+    p_tarefa->id = id;
+    p_tarefa->duracao = duracao;
+    p_tarefa->periodo = periodo;
+    p_tarefa->estado = PRONTA;
 
     return p_tarefa;
 }
@@ -78,4 +83,18 @@ ESTADO_TAREFA tarefa_get_estado(tarefa_t* tarefa)
     estado = tarefa->estado;
 
     return estado;
+}
+
+
+void ordena_tarefas(lista_enc_t* lista_tarefas)
+{
+    tarefa_t* p_tarefa;
+    tarefa_t* p_tarefa_next;
+    no_t* p_no;
+    no_t* p_no_next;
+
+    p_no = obter_cabeca(lista_tarefas);
+    p_tarefa = (tarefa_t*) obter_dado(p_no);
+
+    for()
 }
