@@ -16,6 +16,21 @@
 	<inttypes.h>
 	"tarefas.h"
 
+<<<<<<< HEAD
+1468713136 source:c:\users\marcos\documents\github\projetofinal_marcos\projetofinal_v0\main.c
+	<stdio.h>
+	<stdlib.h>
+	"tarefas.h"
+
+1468718419 c:\users\marcos\documents\github\projetofinal_marcos\projetofinal_v0\tarefas.h
+	<inttypes.h>
+
+1468718308 source:c:\users\marcos\documents\github\projetofinal_marcos\projetofinal_v0\tarefas.c
+	<stdio.h>
+	<stdlib.h>
+	<inttypes.h>
+	"tarefas.h"
+=======
 1468780097 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v0\lista_enc.c
 	<stdio.h>
 	<stdlib.h>
@@ -31,4 +46,5 @@
 	<stdio.h>
 	<stdlib.h>
 	"no.h"
+>>>>>>> upstream/master
 
