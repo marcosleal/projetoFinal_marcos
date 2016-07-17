@@ -18,6 +18,9 @@ no_t *remover_cabeca(lista_enc_t *lista);
 void imprimi_lista (lista_enc_t *lista);
 void imprimi_lista_tras (lista_enc_t *lista);
 
+int tamanho_lista(lista_enc_t *lista);
+void swap_nos(lista_enc_t *lista, no_t* no);
+
 /* Retorna o dado de um no removido*
  * no_removido é liberado da memoória  */
 void *remover_no(lista_enc_t *lista, no_t *no_removido);

@@ -91,10 +91,17 @@ void ordena_tarefas(lista_enc_t* lista_tarefas)
     tarefa_t* p_tarefa;
     tarefa_t* p_tarefa_next;
     no_t* p_no;
-    no_t* p_no_next;
+    int tamanho, i;
 
-    p_no = obter_cabeca(lista_tarefas);
-    p_tarefa = (tarefa_t*) obter_dado(p_no);
-
-    for()
+    for(tamanho = tamanho_lista(lista_tarefas); tamanho>1; tamanho--){
+        p_no = obter_cabeca(lista_tarefas);
+        for(i=0; i<(tamanho-1); i++){
+            p_tarefa = (tarefa_t*) obter_dado(p_no);
+            p_no = obtem_proximo(p_no);
+            p_tarefa_next = (tarefa_t*) obter_dado(p_no);
+            if(tarefa_get_periodo(p_tarefa) > tarefa_get_periodo(p_tarefa_next)){
+                swap_nos(lista_tarefas, obtem_anterior(p_no));
+            }
+        }
+    }
 }

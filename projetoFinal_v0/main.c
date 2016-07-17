@@ -41,6 +41,16 @@ int main()
     no_aux = cria_no((void*) tarefaTeste);
     add_cauda(listaTarefas, no_aux);
 
+    ordena_tarefas(listaTarefas);
+
+    int i;
+    no_t* no;
+    no = obter_cabeca(listaTarefas);
+    for(i=0; i<5; i++){
+        printf("id = %d\n", tarefa_get_id(obter_dado(no)));
+        no = obtem_proximo(no);
+    }
+
     tarefa_set_estado(tarefaTeste, OCIOSA);
 
     return 0;

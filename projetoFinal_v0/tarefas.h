@@ -2,6 +2,7 @@
 #define TAREFAS_H_INCLUDED
 
 #include <inttypes.h>
+#include "lista_enc.h"
 
 typedef enum{
     OCIOSA,     // Nada a fazer

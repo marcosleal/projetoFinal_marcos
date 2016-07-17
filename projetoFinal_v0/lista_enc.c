@@ -131,6 +131,47 @@ no_t *obter_cauda(lista_enc_t *lista){
 	return lista->cauda;
 }
 
+int tamanho_lista(lista_enc_t *lista)
+{
+    if (lista == NULL){
+		fprintf(stderr,"tamanho_lista: ponteiros invalidos");
+		exit(EXIT_FAILURE);
+	}
+
+    return lista->tamanho;
+}
+
+void swap_nos(lista_enc_t *lista, no_t* no)
+{
+    no_t *noSeg;
+    no_t *noAnt;
+    no_t *noPro;
+
+    if (lista == NULL){
+        fprintf(stderr,"swapNos: ponteiros invalidos");
+        exit(EXIT_FAILURE);
+    }
+
+    noAnt = obtem_anterior(no);
+    noSeg = obtem_proximo(no);
+    noPro = obtem_proximo(noSeg);
+    desliga_no(no);
+    desliga_no(noSeg);
+    if(noAnt == NULL){
+        lista->cabeca = noSeg;
+        liga_nos(no, noPro);
+    }
+    else if(noPro == NULL){
+        lista->cauda = no;
+        liga_nos(noAnt, noSeg);
+    }
+    else{
+        liga_nos(noAnt, noSeg);
+        liga_nos(no, noPro);
+    }
+    liga_nos(noSeg, no);
+}
+
 no_t *remover_cauda(lista_enc_t *lista)
 {
 	no_t *anterior;
