@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1468779954 source:m:\documentos\projetos\codeblocks\prgii22105_argumentosmain\main.c
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+
