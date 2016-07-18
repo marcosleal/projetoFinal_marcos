@@ -24,8 +24,9 @@ struct tarefas{
     uint8_t id;            /// Identificador da tarefa
     uint64_t duracao;      /// Quanto tempo a tarefa será totalmente executada - C
     uint64_t periodo;      /// Quanto tempo até a tarefa ser executada novamente - T
-    uint8_t tempoInicio;   /// Em que tempo a variavel começou a ser executada
-    uint8_t tempoExe;      /// Quantos ciclos a tarefa executou
+    uint32_t tempoInicio;   /// Em que tempo a variavel começou a ser executada
+    uint32_t tempoExe;      /// Quantos ciclos a tarefa executou
+    uint32_t nmrExe;        /// Quantos "jobs" estão na fila - Para quando os periodos T se acumulam
     ESTADO_TAREFA estado;  /// Qual estado da tarefa
 };
 
@@ -45,6 +46,7 @@ tarefa_t* cria_tarefa(uint8_t id, uint64_t duracao, uint64_t periodo)
     p_tarefa->periodo = periodo;
     p_tarefa->estado = PRONTA;
     p_tarefa->tempoExe = 0;
+    p_tarefa->nmrExe = 0;
 
     return p_tarefa;
 }
@@ -119,6 +121,29 @@ void ordena_tarefas(lista_enc_t* lista_tarefas)
     }
 }
 
+void imprime_tarefas(lista_enc_t* listaTarefas)
+{
+    no_t* p_no;
+    tarefa_t* p_tarefa;
+    char estados[4][20] = { {"Ociosa"},
+                            {"Executando"},
+                            {"Pronta"},
+                            {"Parada"}
+                          };
+
+    // Verifica se o ponteiro de lista de tarefa é válido
+
+    p_no = obter_cabeca(listaTarefas);
+
+    while(p_no){
+        p_tarefa = (tarefa_t*) obter_dado(p_no);
+
+        printf("Tarefa %d - Estado %s\n", tarefa_get_id(p_tarefa), estados[(int)tarefa_get_estado(p_tarefa)]);
+
+        p_no = obtem_proximo(p_no);
+    }
+}
+
 tarefa_t* retorna_tarefa_prio(lista_enc_t* listaTarefas)
 {
     tarefa_t *p_tarefa;
@@ -137,7 +162,30 @@ tarefa_t* retorna_tarefa_prio(lista_enc_t* listaTarefas)
     return NULL;
 }
 
-void tarefa_set_inicio(tarefa_t* tarefa, uint8_t tempo)
+void update_tarefas(lista_enc_t* listaTarefas, uint32_t tempo)
+{
+    no_t* p_no;
+    tarefa_t* p_tarefa;
+
+    // Verifica se o ponteiro de tarefa é válido
+
+    p_no = obter_cabeca(listaTarefas);
+
+    while(p_no){
+        p_tarefa = (tarefa_t*) obter_dado(p_no);
+
+        if(!(tempo%p_tarefa->periodo)){
+            p_tarefa->nmrExe++;
+            // Desenha seta para cima
+            if(p_tarefa->estado == OCIOSA){
+                p_tarefa->estado = PRONTA;
+            }
+        }
+        p_no = obtem_proximo(p_no);
+    }
+}
+
+void tarefa_set_inicio(tarefa_t* tarefa, uint32_t tempo)
 {
     // Verifica se o ponteiro de tarefa é válido
 
@@ -145,20 +193,67 @@ void tarefa_set_inicio(tarefa_t* tarefa, uint8_t tempo)
     tarefa->estado = EXECUTANDO;
 }
 
-void tarefa_set_pausa(tarefa_t* tarefa, uint8_t tempo)
+void tarefa_set_pausa(tarefa_t* tarefa, uint32_t tempo)
 {
     // Verifica se o ponteiro de tarefa é válido
 
     tarefa->tempoExe = tarefa->tempoExe + (tempo - tarefa->tempoInicio);
+    tarefa->estado = PARADA;
 }
 
-int tarefa_checa_termino(tarefa_t* tarefa, uint8_t tempo)
+int tarefa_checa_termino(tarefa_t* tarefa, uint32_t tempo)
 {
     // Verifica se o ponteiro de tarefa é válido
 
-    if(tempo-tarefa->tempoInicio == tarefa->duracao){
+// Necessário levar em consideração a PAUSA
+    if((tempo-tarefa->tempoInicio)+tarefa->tempoExe == tarefa->duracao){
+        tarefa->nmrExe--;
+        if(!tarefa->nmrExe){    // Se a tarefa não tiver mais execuções na fila
+            tarefa->estado = OCIOSA;
+        }else tarefa->estado = PRONTA;
         return 1;
     }
 
     return 0;
+}
+
+uint64_t calcMDC(uint64_t x, uint64_t y)
+{
+    uint64_t res;
+
+    do{
+        res = x%y;
+
+        x = y;
+        y = res;
+    }while(res);
+
+    return x;
+}
+
+uint64_t calcMMC(uint64_t x, uint64_t y)
+{
+    return (x*y)/calcMDC(x,y);
+}
+
+uint64_t tarefas_calcMMC(lista_enc_t* listaTarefas)
+{
+    tarefa_t* p_tarefa;
+    no_t* p_no;
+    no_t* p_no_ant;
+    uint64_t mmc;
+
+    p_no_ant = obter_cabeca(listaTarefas);
+    p_tarefa = (tarefa_t*) obter_dado(p_no_ant);
+    mmc = p_tarefa->periodo;
+    p_no = obtem_proximo(p_no_ant);
+    while(p_no){
+        p_tarefa = (tarefa_t*) obter_dado(p_no);
+        mmc = calcMMC(mmc, p_tarefa->periodo);
+
+        p_no_ant = p_no;
+        p_no = obtem_proximo(p_no);
+    }
+
+    return mmc;
 }

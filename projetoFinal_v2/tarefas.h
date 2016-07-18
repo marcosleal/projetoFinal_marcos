@@ -92,6 +92,18 @@ ESTADO_TAREFA tarefa_get_estado(tarefa_t* tarefa);
 
 void ordena_tarefas(lista_enc_t* lista_tarefas);
 
-void tarefa_set_inicio(tarefa_t* tarefa, uint8_t tempo);
+// Função para testes:
+void imprime_tarefas(lista_enc_t* listaTarefas);
+
+void tarefa_set_inicio(tarefa_t* tarefa, uint32_t tempo);
+tarefa_t* retorna_tarefa_prio(lista_enc_t* listaTarefas);
+void update_tarefas(lista_enc_t* listaTarefas, uint32_t tempo);
+void tarefa_set_inicio(tarefa_t* tarefa, uint32_t tempo);
+void tarefa_set_pausa(tarefa_t* tarefa, uint32_t tempo);
+int tarefa_checa_termino(tarefa_t* tarefa, uint32_t tempo);
+
+uint64_t calcMDC(uint64_t x, uint64_t y);
+uint64_t calcMMC(uint64_t x, uint64_t y);
+uint64_t tarefas_calcMMC(lista_enc_t* listaTarefas);
 
 #endif // TAREFAS_H_INCLUDED

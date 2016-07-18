@@ -10,7 +10,7 @@
 
 1468796962 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v2\no.h
 
-1468797675 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v2\main.c
+1468862741 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v2\main.c
 	<ctype.h>
 	<stdio.h>
 	<stdlib.h>
@@ -20,7 +20,7 @@
 	"lista_enc.h"
 	"no.h"
 
-1468801849 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v2\tarefas.h
+1468862741 c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v2\tarefas.h
 	<inttypes.h>
 	"lista_enc.h"
 
@@ -29,7 +29,7 @@
 	<stdlib.h>
 	"no.h"
 
-1468796962 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v2\tarefas.c
+1468859426 source:c:\users\sergi\onedrive\documentos\github\projetofinalprogc_2016_01\projetofinal_v2\tarefas.c
 	<stdio.h>
 	<stdlib.h>
 	<inttypes.h>

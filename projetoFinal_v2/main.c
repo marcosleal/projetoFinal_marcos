@@ -30,9 +30,12 @@
 
 int main (int argc, char **argv)
 {
-    tarefa_t* tarefaTeste;
+    tarefa_t* tarefaAtual;
+    tarefa_t* tarefaPrio;
     lista_enc_t* listaTarefas;
     no_t* no_aux;
+    unsigned long int ticks;
+    int hiper_periodo;
 
     char *cvalue = NULL;
     int indice, auxC, auxT;
@@ -92,8 +95,8 @@ int main (int argc, char **argv)
                 #endif
             }else{
                 sscanf(str, "T%d;%d;%d", &indice, &auxC, &auxT);
-                tarefaTeste = cria_tarefa(indice, auxC, auxT);
-                no_aux = cria_no((void*) tarefaTeste);
+                tarefaAtual = cria_tarefa(indice, auxC, auxT);
+                no_aux = cria_no((void*) tarefaAtual);
                 add_cauda(listaTarefas, no_aux);
                 printf("Armazenado \tT%d\tC: %d\tT: %d\n", indice, auxC, auxT);
             }
@@ -114,16 +117,46 @@ int main (int argc, char **argv)
         printf ("Non-option argument %s\n", argv[indice]);
 
     ordena_tarefas(listaTarefas);
+    hiper_periodo = tarefas_calcMMC(listaTarefas);
+    printf("HiperPeriodo = %d\n", hiper_periodo);
 
-    int i;
-    no_t* no;
-    no = obter_cabeca(listaTarefas);
-    for(i = 0; i < tamanho_lista(listaTarefas); i++){
-        printf("id = %d\n", tarefa_get_id(obter_dado(no)));
-        no = obtem_proximo(no);
+    ticks = 0;
+    tarefaAtual = NULL;
+    while(ticks<=hiper_periodo){
+        update_tarefas(listaTarefas, ticks);
+
+        tarefaPrio = retorna_tarefa_prio(listaTarefas);
+        if(tarefaPrio){
+            if(tarefaAtual != tarefaPrio){
+                if(tarefaAtual){
+                    if(tarefa_checa_termino(tarefaAtual, ticks)){
+
+                    }else
+                        tarefa_set_pausa(tarefaAtual, ticks);
+                }
+                tarefaAtual = tarefaPrio;
+                tarefa_set_inicio(tarefaAtual, ticks);
+            }
+
+            if(tarefa_checa_termino(tarefaAtual, ticks)){
+                tarefaAtual = retorna_tarefa_prio(listaTarefas);
+                if(tarefaAtual){
+                    tarefa_set_inicio(tarefaAtual, ticks);
+                }
+            }
+        }
+
+        #ifdef DEBUG
+            printf("Tick: %d\n", (int) ticks);
+            imprime_tarefas(listaTarefas);
+            puts("");
+        #endif // DEBUG
+
+        ticks++;
     }
 
-    tarefa_set_estado(tarefaTeste, OCIOSA);
+
+
 
     return 0;
 }
