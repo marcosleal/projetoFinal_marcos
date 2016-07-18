@@ -1,0 +1,3 @@
+Sempre que ele estiver pronto seta para cima -> 2º arg do TaskArrDead
+Sempre que ele terminar um ciclo completo seta para baixo -> 3º arg do TaskArrDead
+No taskExecution ele desenho o quadrado no intervalo entre 2º e 3º arg
