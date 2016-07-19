@@ -38,9 +38,10 @@ int main (int argc, char **argv)
 
     char *cvalue = NULL;
     int indice, auxC, auxT;
-    int c;
+    uint8_t c;
 
     FILE *fp = NULL;
+    FILE *fp_diagramaGannt = NULL;
     char close;
 
     char str[BUFFER_SIZE], strAux[BUFFER_SIZE];
@@ -110,12 +111,35 @@ int main (int argc, char **argv)
         printf("\nArquivo de entrada FECHADO com sucesso!\n\n");
     }
 
+    #ifdef DEBUG
     printf ("cvalue = %s\n", cvalue);
+    #endif // DEBUG
 
     for (indice = optind; indice < argc; indice++)
         printf ("Non-option argument %s\n", argv[indice]);
 
     ordena_tarefas(listaTarefas);
+
+    fp_diagramaGannt = fopen("diagramaGannt.tex", "w");        // Abrindo arquivo para escrita em .tex
+    if(fp_diagramaGannt == NULL){                              // Verificação de erro na abertura do arquivo
+        printf("Erro na abertura do arquivo BINARIO!\n");
+        return -1;
+    }else
+        printf("Arquivo .tex aberto com sucesso.\n");
+
+    imprimeCabecalho(fp_diagramaGannt, numTarefa);
+
+    //imprimeNomenclatura(fp_diagramaGannt, listaTarefas);
+
+    finalizaCabecalho(fp_diagramaGannt);
+
+    close = fclose(fp_diagramaGannt);                       // Fechando o arquivo aberto
+    if(close == EOF){                                       // Verificando erro no fechamento do arquivo
+        printf("\nERRO ao FECHAR o arquivo .tex!\n");
+        return -1;
+    }else{
+        printf("\nArquivo .tex FECHADO com sucesso!\n");
+    }
 
     int i;
     no_t* no;

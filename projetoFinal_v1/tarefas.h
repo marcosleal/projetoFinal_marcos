@@ -84,4 +84,9 @@ ESTADO_TAREFA tarefa_get_estado(tarefa_t* tarefa);
 
 void ordena_tarefas(lista_enc_t* lista_tarefas);
 
+void imprimeCabecalho(FILE *fp, uint8_t numTarefas);
+
+void finalizaCabecalho(FILE *fp);
+
+//void imprimeNomenclatura(FILE *fp, lista_enc_t* lista_tarefas);
 #endif // TAREFAS_H_INCLUDED

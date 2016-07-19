@@ -1,0 +1,23 @@
+\documentclass[legalpaper,10pt]{article}
+\usepackage[landscape]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{listings}
+\usepackage{listingsutf8}
+
+\usepackage{rtsched}
+
+\begin{document}
+
+\begin{figure}[h]
+\centering
+
+	% Cria ambiente, 6 tarefas, escala de tempo até 90
+	\begin{RTGrid}[nosymbols=1,width=25cm]{6}{90}
+	\end{RTGrid}
+
+\caption{Exemplo de escalonamento para tarefas.}
+\label{fig:ex1}
+\end{figure}
+\end{document}
