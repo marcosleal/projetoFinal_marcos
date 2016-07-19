@@ -96,7 +96,6 @@ ESTADO_TAREFA tarefa_get_estado(tarefa_t* tarefa)
     return estado;
 }
 
-
 void ordena_tarefas(lista_enc_t* lista_tarefas)
 {
     tarefa_t* p_tarefa;
@@ -116,3 +115,55 @@ void ordena_tarefas(lista_enc_t* lista_tarefas)
         }
     }
 }
+
+void imprimeCabecalho(FILE *fp, uint8_t numTarefas)
+{
+    fprintf(fp, "\\documentclass[legalpaper,10pt]{article}\n");
+    fprintf(fp, "\\usepackage[landscape]{geometry}\n");
+    fprintf(fp, "\\usepackage[utf8]{inputenc}\n");
+    fprintf(fp, "\\usepackage[brazil]{babel}\n\n");
+
+    fprintf(fp, "\\usepackage{listings}\n");
+    fprintf(fp, "\\usepackage{listingsutf8}\n\n");
+
+    fprintf(fp, "\\usepackage{rtsched}\n\n");
+
+    fprintf(fp, "\\begin{document}\n\n");
+
+    fprintf(fp, "\\begin{figure}[h]\n");
+    fprintf(fp, "\\centering\n\n");
+
+    fprintf(fp, "\t%% Cria ambiente, %d tarefas, escala de tempo até 90\n", numTarefas+1);
+    fprintf(fp, "\t\\begin{RTGrid}[nosymbols=1,width=25cm]{%d}{90}\n", numTarefas+1);
+}
+
+void finalizaCabecalho(FILE *fp)
+{
+    fprintf(fp, "\t\\end{RTGrid}\n\n");
+
+    fprintf(fp, "\\caption{Exemplo de escalonamento para tarefas.}\n");
+    fprintf(fp, "\\label{fig:ex1}\n");
+    fprintf(fp, "\\end{figure}\n");
+    fprintf(fp, "\\end{document}");
+}
+
+//void imprimeNomenclatura(FILE *fp, lista_enc_t* lista_tarefas)
+//{
+//    tarefa_t* p_tarefa;
+//    no_t* p_no;
+//    int tamanho, i;
+//
+//    fprintf(fp, "\t%% Nomenclatura das tarefas\n");
+//
+//    tamanho = tamanho_lista(lista_tarefas);
+//
+//    fprintf(fp, "\\RowLabel{%d}{CPU}\n", tamanho+1);
+//
+//    p_no = obter_cabeca(lista_tarefas);
+//
+//    for(i = 0; i < tamanho; i++){
+//        p_tarefa = (tarefa_t*) obter_dado(p_no);
+//        fprintf(fp, "\\RowLabel{%d}{$\\tau_%d}\n", i+1, tarefa_get_id(p_tarefa));
+//        p_no = obtem_proximo(p_no);
+//    }
+//}

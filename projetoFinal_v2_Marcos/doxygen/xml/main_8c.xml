@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="tarefas_8h" local="yes">tarefas.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdlib.h</label>
+      </node>
+      <node id="0">
+        <label>main.c</label>
+        <link refid="main.c"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tarefas.h</label>
+        <link refid="tarefas_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/main.c" line="22" column="1" bodyfile="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/main.c" bodystart="22" bodyend="31"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Objetivo: Criar o TaD que ira ser utilizado para conter as informações das tarefas. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Sérgio Luiz Martins Jr. </para></simplesect>
+<simplesect kind="author"><para>Marcos Vinícius Leal da Silva </para></simplesect>
+<simplesect kind="date"><para>16/07/16 </para></simplesect>
+<simplesect kind="version"><para>1.0</para></simplesect>
+A more elaborated file description. </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="comment">//<sp/>Data:<sp/>16/07/2016</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Objetivo:<sp/>Criar<sp/>o<sp/>TaD<sp/>que<sp/>ira<sp/>ser<sp/>utilizado<sp/>para<sp/>conter<sp/>as<sp/>informações<sp/>das<sp/>tarefas</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="tarefas_8h" kindref="compound">tarefas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefa_t*<sp/>tarefaTeste;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>tarefaTeste<sp/>=<sp/><ref refid="tarefas_8c_1ae02cb9d6b8c7a82e2b36195cc9afb9d5" kindref="member">cria_tarefa</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tarefas_8c_1ae6140bb7ef769b8117a4973815edbb18" kindref="member">tarefa_set_estado</ref>(tarefaTeste,<sp/><ref refid="tarefas_8h_1a71c25d527d6749ee6e00b8f6e139c74ba9dd328194fb6d833c0b6b49908bdb3b9" kindref="member">OCIOSA</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v0/main.c"/>
+  </compounddef>
+</doxygen>

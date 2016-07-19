@@ -1,0 +1,37 @@
+\documentclass[legalpaper,10pt]{article}
+\usepackage[landscape]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{listings}
+\usepackage{listingsutf8}
+
+\usepackage{rtsched}
+
+\begin{document}
+
+\begin{figure}[h]
+\centering
+
+	% Cria ambiente, 6 tarefas, escala de tempo até 90
+	\begin{RTGrid}[nosymbols=1,width=25cm]{6}{90}
+
+	% Nomenclatura das tarefas
+	\RowLabel{6}{CPU}
+	\RowLabel{1}{$\tau_1$}
+	\RowLabel{2}{$\tau_2$}
+	\RowLabel{3}{$\tau_4$}
+	\RowLabel{4}{$\tau_3$}
+	\RowLabel{5}{$\tau_5$}
+
+	\TaskArrival{1}{0}
+	\TaskDeadline{1}{2}
+	\TaskExecution{1}{0}{2}
+	\TaskExecution{6}{0}{2}
+
+	\end{RTGrid}
+
+\caption{Exemplo de escalonamento para tarefas.}
+\label{fig:ex1}
+\end{figure}
+\end{document}
