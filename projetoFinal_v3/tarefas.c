@@ -130,6 +130,8 @@ void imprime_tarefas(lista_enc_t* listaTarefas)
                             {"Pronta"},
                             {"Parada"}
                           };
+    int periodo;
+    int duracao;
 
     // Verifica se o ponteiro de lista de tarefa é válido
 
@@ -138,7 +140,10 @@ void imprime_tarefas(lista_enc_t* listaTarefas)
     while(p_no){
         p_tarefa = (tarefa_t*) obter_dado(p_no);
 
-        printf("Tarefa %d - Estado %s\n", tarefa_get_id(p_tarefa), estados[(int)tarefa_get_estado(p_tarefa)]);
+        printf("Tarefa %d - Estado %s \t", tarefa_get_id(p_tarefa), estados[(int)tarefa_get_estado(p_tarefa)]);
+        periodo = tarefa_get_periodo(p_tarefa);
+        duracao = tarefa_get_duracao(p_tarefa);
+        printf("C: %d - T: %d\n", duracao, periodo);
 
         p_no = obtem_proximo(p_no);
     }
@@ -216,6 +221,7 @@ int tarefa_checa_termino(tarefa_t* tarefa, uint32_t tempo)
 // Necessário levar em consideração a PAUSA
     if((tempo-tarefa->tempoInicio)+tarefa->tempoExe == tarefa->duracao){
         tarefa->nmrExe--;
+        tarefa->tempoExe = 0;
         if(!tarefa->nmrExe){    // Se a tarefa não tiver mais execuções na fila
             tarefa->estado = OCIOSA;
         }else tarefa->estado = PRONTA;
