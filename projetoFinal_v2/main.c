@@ -9,11 +9,6 @@
  * A more elaborated file description.
  */
 
-// Data: 16/07/2016
-//
-// Objetivo: Criar o TaD que ira ser utilizado para conter as informações das tarefas
-//
-
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,7 +18,6 @@
 #include "tarefas.h"
 #include "lista_enc.h"
 #include "no.h"
-
 
 #define BUFFER_SIZE 10
 #define DEBUG

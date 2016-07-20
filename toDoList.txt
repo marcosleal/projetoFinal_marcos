@@ -2,3 +2,5 @@ To Do List:
 
 - Função checagem tarefa válida
 - Melhorar ordenação lista prioridades
+
+- Fazer o ganntCabeçalho receber o hiperPeriodo

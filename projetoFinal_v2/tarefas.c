@@ -9,11 +9,6 @@
  * A more elaborated file description.
  */
 
-// Changelog
-//
-//  16/07/2016 - Criação do dado
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
