@@ -26,7 +26,7 @@
 
 
 #define BUFFER_SIZE 10
-//#define DEBUG
+#define DEBUG
 #define HUGE_VALUE  100000
 
 int main (int argc, char **argv)
@@ -137,9 +137,10 @@ int main (int argc, char **argv)
     ticks = 0;
     tempo_cpu = 0;
     tarefaAtual = NULL;
+
+
     while(ticks<=hiper_periodo){
         update_tarefas(listaTarefas, ticks, fp_diagramaGannt);
-
         tarefaPrio = retorna_tarefa_prio(listaTarefas);
         if(tarefaPrio){
             if(tempo_cpu==HUGE_VALUE){
@@ -165,6 +166,9 @@ int main (int argc, char **argv)
                 tarefaAtual = retorna_tarefa_prio(listaTarefas);
                 if(tarefaAtual){
                     tarefa_set_inicio(tarefaAtual, ticks);
+                }else{
+                    ganntQuadrado(fp_diagramaGannt,numTarefa+1,tempo_cpu,ticks);
+                    tempo_cpu=HUGE_VALUE;
                 }
             }
         }else if(tempo_cpu!=HUGE_VALUE){
@@ -172,9 +176,7 @@ int main (int argc, char **argv)
             ganntQuadrado(fp_diagramaGannt,numTarefa+1,tempo_cpu,ticks-1);
             tempo_cpu=HUGE_VALUE;
         }
-        if(tempo_cpu!=HUGE_VALUE){  // && ticks!=tempo_cpu desnecessário
-            ganntQuadrado(fp_diagramaGannt,numTarefa+1,tempo_cpu,ticks);
-        }
+
 
         #ifdef DEBUG
             printf("Tick: %d\n", (int) ticks);
@@ -183,6 +185,9 @@ int main (int argc, char **argv)
         #endif // DEBUG
 
         ticks++;
+    }
+    if(tempo_cpu!=HUGE_VALUE && tempo_cpu!=(ticks-1)){  // && ticks!=tempo_cpu desnecessário
+        ganntQuadrado(fp_diagramaGannt,numTarefa+1,tempo_cpu,ticks-1);
     }
 
     ganntFinalizaCabecalho(fp_diagramaGannt);
