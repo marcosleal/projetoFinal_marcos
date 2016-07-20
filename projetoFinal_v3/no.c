@@ -1,3 +1,13 @@
+/** \file no.c
+ * \brief   Funções para nó (TaD).
+ *
+ * \author  Renan Augusto Starke
+ * \date    15/07/16
+ * \version 1.0
+ *
+ * A more elaborated file description.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 

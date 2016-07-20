@@ -1,4 +1,12 @@
-// lista_enc.h e no.h assim como respectivos .c fornecidos pelo professor
+/** \file lista_enc.h
+ * \brief   Cabeçalho de funções para lista encadeada (TaD).
+ *
+ * \author  Renan Augusto Starke
+ * \date    15/07/16
+ * \version 1.0
+ *
+ * A more elaborated file description.
+ */
 
 #ifndef LISTA_ENC_H_INCLUDED
 #define LISTA_ENC_H_INCLUDED
@@ -22,7 +30,7 @@ int tamanho_lista(lista_enc_t *lista);
 void swap_nos(lista_enc_t *lista, no_t* no);
 
 /* Retorna o dado de um no removido*
- * no_removido Ã© liberado da memoÃ³ria  */
+ * no_removido é liberado da memoória  */
 void *remover_no(lista_enc_t *lista, no_t *no_removido);
 
 

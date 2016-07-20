@@ -3,16 +3,11 @@
  *
  * \author  Sérgio Luiz Martins Jr.
  * \author  Marcos Vinícius Leal da Silva
- * \date    19/07/16
+ * \date    20/07/16
  * \version 3.0
  *
  * A more elaborated file description.
  */
-
-// Data: 19/07/2016
-//
-// Objetivo: Integrar o funcionamento do escalonador com as funções de escrita
-//
 
 #include <ctype.h>
 #include <stdio.h>
@@ -26,7 +21,7 @@
 
 
 #define BUFFER_SIZE 10
-//#define DEBUG
+#define DEBUG
 #define HUGE_VALUE  100000
 
 int main (int argc, char **argv)
@@ -40,14 +35,14 @@ int main (int argc, char **argv)
 
     char *cvalue = NULL;
     int indice, auxC, auxT;
-    int c;
+    int c, i;
 
     FILE *fp = NULL;
     FILE *fp_diagramaGannt = NULL;
     char close;
 
     char str[BUFFER_SIZE], strAux[BUFFER_SIZE];
-    int numTarefa;
+    int numTarefa = HUGE_VALUE;
 
     opterr = 0;
 
@@ -79,15 +74,17 @@ int main (int argc, char **argv)
     }else
         printf("Arquivo de entrada ABERTO com sucesso.\n\n");
 
-    while(!feof(fp)){                                   // Sairá do laço caso alcance o final do arquivo
-        fgets(str, BUFFER_SIZE, fp);                    // Lê uma linha do arquivo até '\n', retorna NULL em str caso falhe
+    i = numTarefa;
 
+    while((!feof(fp)) && i > 0){                                   // Sairá do laço caso alcance o final do arquivo
+        fgets(str, BUFFER_SIZE, fp);                    // Lê uma linha do arquivo até '\n', retorna NULL em str caso falhe
         if((str != NULL)){                              // Caso não tenha falhado a leitura da linha
             // Leitura do cabeçalho
             memset (strAux, '-', BUFFER_SIZE - 1);      // Limpa a string auxiliar - resolve problemas com '\n'
             sscanf(str, "%s", strAux);                  // Armazena a primeira string de str em strAux.
             if(!strncmp(strAux, "N", 1)){
                 sscanf(str, "N;%d", &numTarefa);
+                i = numTarefa;
                 #ifdef DEBUG
                 printf("Numero de Tarefas = %d\n", numTarefa);
                 #endif
@@ -101,6 +98,7 @@ int main (int argc, char **argv)
                 no_aux = cria_no((void*) tarefaAtual);
                 add_cauda(listaTarefas, no_aux);
                 printf("Armazenado \tT%d\tC: %d\tT: %d\n", indice, auxC, auxT);
+                i--;
             }
         }
     }

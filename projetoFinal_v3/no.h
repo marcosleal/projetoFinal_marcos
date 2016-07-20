@@ -1,4 +1,12 @@
-// lista_enc.h e no.h assim como respectivos .c fornecidos pelo professor
+/** \file no.h
+ * \brief   Cabeçalho de funções para nó (TaD).
+ *
+ * \author  Renan Augusto Starke
+ * \date    15/07/16
+ * \version 1.0
+ *
+ * A more elaborated file description.
+ */
 
 #ifndef NO_H_INCLUDED
 #define NO_H_INCLUDED

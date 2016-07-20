@@ -1,0 +1,14 @@
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:42: warning: argument 'período' of command @param is not found in the argument list of cria_tarefa(uint8_t id, uint64_t duracao, uint64_t periodo)
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.c:29: warning: The following parameters of cria_tarefa(uint8_t id, uint64_t duracao, uint64_t periodo) are not documented:
+  parameter 'periodo'
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:93: warning: argument 'tarefa' of command @param is not found in the argument list of ordena_tarefas(lista_enc_t *lista_tarefas)
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:93: warning: argument 'tempo' of command @param is not found in the argument list of ordena_tarefas(lista_enc_t *lista_tarefas)
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.c:118: warning: The following parameters of ordena_tarefas(lista_enc_t *lista_tarefas) are not documented:
+  parameter 'lista_tarefas'
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:42: warning: argument 'período' of command @param is not found in the argument list of cria_tarefa(uint8_t id, uint64_t duracao, uint64_t periodo)
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:48: warning: The following parameters of cria_tarefa(uint8_t id, uint64_t duracao, uint64_t periodo) are not documented:
+  parameter 'periodo'
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:93: warning: argument 'tarefa' of command @param is not found in the argument list of ordena_tarefas(lista_enc_t *lista_tarefas)
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:93: warning: argument 'tempo' of command @param is not found in the argument list of ordena_tarefas(lista_enc_t *lista_tarefas)
+C:/Users/Marcos/Documents/GitHub/projetoFinal_marcos/projetoFinal_v3/tarefas.h:99: warning: The following parameters of ordena_tarefas(lista_enc_t *lista_tarefas) are not documented:
+  parameter 'lista_tarefas'

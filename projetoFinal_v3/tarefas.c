@@ -9,25 +9,20 @@
  * A more elaborated file description.
  */
 
-// Changelog
-//
-//  16/07/2016 - Criação do dado
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <inttypes.h>
 
 #include "tarefas.h"
 
-struct tarefas{
-    uint8_t id;            /// Identificador da tarefa
-    uint64_t duracao;      /// Quanto tempo a tarefa será totalmente executada - C
-    uint64_t periodo;      /// Quanto tempo até a tarefa ser executada novamente - T
-    uint32_t tempoInicio;   /// Em que tempo a variavel começou a ser executada
-    uint32_t tempoExe;      /// Quantos ciclos a tarefa executou
-    uint32_t nmrExe;        /// Quantos "jobs" estão na fila - Para quando os periodos T se acumulam
-    ESTADO_TAREFA estado;  /// Qual estado da tarefa
+struct tarefas{            /// Identificador da tarefa
+    uint8_t id;            /// Quanto tempo a tarefa será totalmente executada - C
+    uint64_t duracao;      /// Quanto tempo até a tarefa ser executada novamente - T
+    uint64_t periodo;      /// Em que tempo a variavel começou a ser executada
+    uint32_t tempoInicio;  /// Quantos ciclos a tarefa executou
+    uint32_t tempoExe;     /// Quantos "jobs" estão na fila - Para quando os periodos T se acumulam
+    uint32_t nmrExe;       /// Qual estado da tarefa
+    ESTADO_TAREFA estado;
 };
 
 // Função cria tarefa
@@ -56,8 +51,10 @@ uint8_t tarefa_get_id(tarefa_t* tarefa)
     uint8_t id;
 
     // Verifica se o ponteiro de tarefa é válido
-
-
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_get_id: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     id = tarefa->id;
 
@@ -69,7 +66,10 @@ uint64_t tarefa_get_duracao(tarefa_t* tarefa)
     uint64_t duracao;
 
     // Verifica se o ponteiro de tarefa é válido
-
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_get_duracao: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     duracao = tarefa->duracao;
 
@@ -80,6 +80,11 @@ uint64_t tarefa_get_periodo(tarefa_t* tarefa)
 {
     uint64_t periodo;
 
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_get_periodo: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
     periodo = tarefa->periodo;
 
     return periodo;
@@ -88,6 +93,10 @@ uint64_t tarefa_get_periodo(tarefa_t* tarefa)
 void tarefa_set_estado(tarefa_t* tarefa, ESTADO_TAREFA estado)
 {
     // Verifica se o ponteiro de tarefa é válido
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_set_estado: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     tarefa->estado = estado;
 }
@@ -95,6 +104,11 @@ void tarefa_set_estado(tarefa_t* tarefa, ESTADO_TAREFA estado)
 ESTADO_TAREFA tarefa_get_estado(tarefa_t* tarefa)
 {
     ESTADO_TAREFA estado;
+
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_get_estado: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     estado = tarefa->estado;
 
@@ -107,6 +121,11 @@ void ordena_tarefas(lista_enc_t* lista_tarefas)
     tarefa_t* p_tarefa_next;
     no_t* p_no;
     int tamanho, i;
+
+    if (lista_tarefas == NULL) {
+        fprintf(stderr, "ordena_tarefas: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     for(tamanho = tamanho_lista(lista_tarefas); tamanho>1; tamanho--){
         p_no = obter_cabeca(lista_tarefas);
@@ -125,6 +144,7 @@ void imprime_tarefas(lista_enc_t* listaTarefas)
 {
     no_t* p_no;
     tarefa_t* p_tarefa;
+
     char estados[4][20] = { {"Ociosa"},
                             {"Executando"},
                             {"Pronta"},
@@ -132,6 +152,10 @@ void imprime_tarefas(lista_enc_t* listaTarefas)
                           };
 
     // Verifica se o ponteiro de lista de tarefa é válido
+    if (listaTarefas == NULL) {
+        fprintf(stderr, "imprime_tarefas: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     p_no = obter_cabeca(listaTarefas);
 
@@ -148,6 +172,11 @@ tarefa_t* retorna_tarefa_prio(lista_enc_t* listaTarefas)
 {
     tarefa_t *p_tarefa;
     no_t *p_no;
+
+    if (listaTarefas == NULL) {
+        fprintf(stderr, "retorna_tarefa_prio: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     p_no = obter_cabeca(listaTarefas);
 
@@ -168,6 +197,10 @@ void update_tarefas(lista_enc_t* listaTarefas, uint32_t tempo, FILE *fp)
     tarefa_t* p_tarefa;
 
     // Verifica se o ponteiro de tarefa é válido
+    if (listaTarefas == NULL) {
+        fprintf(stderr, "update_tarefas: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     p_no = obter_cabeca(listaTarefas);
 
@@ -189,6 +222,10 @@ void update_tarefas(lista_enc_t* listaTarefas, uint32_t tempo, FILE *fp)
 void tarefa_set_inicio(tarefa_t* tarefa, uint32_t tempo)
 {
     // Verifica se o ponteiro de tarefa é válido
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_set_inicio: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     tarefa->tempoInicio = tempo;
     tarefa->estado = EXECUTANDO;
@@ -197,6 +234,10 @@ void tarefa_set_inicio(tarefa_t* tarefa, uint32_t tempo)
 uint32_t tarefa_get_inicio(tarefa_t* tarefa)
 {
     // Verifica se o ponteiro de tarefa é válido
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_get_inicio: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     return tarefa->tempoInicio;
 }
@@ -204,6 +245,10 @@ uint32_t tarefa_get_inicio(tarefa_t* tarefa)
 void tarefa_set_pausa(tarefa_t* tarefa, uint32_t tempo)
 {
     // Verifica se o ponteiro de tarefa é válido
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_set_pausa: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     tarefa->tempoExe = tarefa->tempoExe + (tempo - tarefa->tempoInicio);
     tarefa->estado = PARADA;
@@ -212,8 +257,12 @@ void tarefa_set_pausa(tarefa_t* tarefa, uint32_t tempo)
 int tarefa_checa_termino(tarefa_t* tarefa, uint32_t tempo)
 {
     // Verifica se o ponteiro de tarefa é válido
+    if (tarefa == NULL) {
+        fprintf(stderr, "tarefa_checa_termino: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
-// Necessário levar em consideração a PAUSA
+    // Necessário levar em consideração a PAUSA
     if((tempo-tarefa->tempoInicio)+tarefa->tempoExe == tarefa->duracao){
         tarefa->nmrExe--;
         if(!tarefa->nmrExe){    // Se a tarefa não tiver mais execuções na fila
@@ -251,6 +300,11 @@ uint64_t tarefas_calcMMC(lista_enc_t* listaTarefas)
     no_t* p_no_ant;
     uint64_t mmc;
 
+    if (listaTarefas == NULL) {
+        fprintf(stderr, "tarefa_set_inicio: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
     p_no_ant = obter_cabeca(listaTarefas);
     p_tarefa = (tarefa_t*) obter_dado(p_no_ant);
     mmc = p_tarefa->periodo;
@@ -268,6 +322,11 @@ uint64_t tarefas_calcMMC(lista_enc_t* listaTarefas)
 
 void ganntCabecalho(FILE *fp, uint8_t numTarefas)
 {
+    if (fp == NULL) {
+        fprintf(stderr, "ganntCabecalho: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
     fprintf(fp, "\\documentclass[legalpaper,10pt]{article}\n");
     fprintf(fp, "\\usepackage[landscape]{geometry}\n");
     fprintf(fp, "\\usepackage[utf8]{inputenc}\n");
@@ -280,7 +339,7 @@ void ganntCabecalho(FILE *fp, uint8_t numTarefas)
 
     fprintf(fp, "\\begin{document}\n\n");
 
-    fprintf(fp, "\\begin{figure}[h]\n");
+    fprintf(fp, "\\begin{figure}[ht]\n");
     fprintf(fp, "\\centering\n\n");
 
     fprintf(fp, "\t%% Cria ambiente, %d tarefas, escala de tempo até 90\n", numTarefas+1);
@@ -289,6 +348,11 @@ void ganntCabecalho(FILE *fp, uint8_t numTarefas)
 
 void ganntFinalizaCabecalho(FILE *fp)
 {
+    if (fp == NULL) {
+        fprintf(stderr, "tarefa_set_inicio: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
     fprintf(fp, "\n\t\\end{RTGrid}\n\n");
 
     fprintf(fp, "\\caption{Exemplo de escalonamento para tarefas.}\n");
@@ -301,7 +365,12 @@ void ganntNomenclatura(FILE *fp, lista_enc_t* lista_tarefas)
 {
     tarefa_t* p_tarefa;
     no_t* p_no;
-    int tamanho, i;
+    int tamanho;
+
+    if (fp == NULL || lista_tarefas == NULL){
+        fprintf(stderr, "ganntNomenclatura: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
 
     fprintf(fp, "\t%% Nomenclatura das tarefas\n");
 
@@ -311,7 +380,7 @@ void ganntNomenclatura(FILE *fp, lista_enc_t* lista_tarefas)
 
     p_no = obter_cabeca(lista_tarefas);
 
-    for(i = 0; i < tamanho; i++){
+    while(p_no){
         p_tarefa = (tarefa_t*) obter_dado(p_no);
         fprintf(fp, "\t\\RowLabel{%d}{$\\tau_%d$}\n", tarefa_get_id(p_tarefa), tarefa_get_id(p_tarefa));
         p_no = obtem_proximo(p_no);
@@ -322,15 +391,30 @@ void ganntNomenclatura(FILE *fp, lista_enc_t* lista_tarefas)
 
 void ganntSetaCima(FILE *fp, uint8_t id, uint32_t tempo)
 {
+    if (fp == NULL) {
+        fprintf(stderr, "ganntSetaCima: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
     fprintf(fp, "\t\\TaskArrival{%d}{%d}\n", id, tempo);
 }
 
 void ganntSetaBaixo(FILE *fp, uint8_t id, uint32_t tempo)
 {
+    if (fp == NULL) {
+        fprintf(stderr, "ganntSetaBaixo: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
     fprintf(fp, "\t\\TaskDeadline{%d}{%d}\n", id, tempo);
 }
 
 void ganntQuadrado(FILE *fp, uint8_t id, uint32_t inicio, uint32_t fim)
 {
+    if (fp == NULL) {
+        fprintf(stderr, "ganntQuadrado: Ponteiro invalido\n");
+        exit(EXIT_FAILURE);
+    }
+
     fprintf(fp, "\t\\TaskExecution{%d}{%d}{%d}\n", id, inicio, fim);
 }

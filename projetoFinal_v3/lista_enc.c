@@ -1,3 +1,13 @@
+/** \file lista_enc.c
+ * \brief   Funções para lista encadeada (TaD).
+ *
+ * \author  Renan Augusto Starke
+ * \date    15/07/16
+ * \version 1.0
+ *
+ * A more elaborated file description.
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -252,7 +262,7 @@ void *remover_no(lista_enc_t *lista, no_t *no_removido)
 		exit(EXIT_FAILURE);
 	}
 
-	//Varre lista atÃ© encontrar nÃ³
+	//Varre lista até encontrar nó
 	meu_no = obter_cabeca(lista);
 
 	while (meu_no){
