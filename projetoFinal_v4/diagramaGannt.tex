@@ -1,0 +1,78 @@
+\documentclass[legalpaper,10pt]{article}
+\usepackage[landscape]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\usepackage{listings}
+\usepackage{listingsutf8}
+
+\usepackage{rtsched}
+
+\begin{document}
+
+\begin{figure}[h]
+\centering
+
+	% Cria ambiente, 3 tarefas, escala de tempo até 40
+	\begin{RTGrid}[nosymbols=1,width=25cm]{3}{40}
+
+	% Nomenclatura das tarefas
+	\RowLabel{3}{CPU}
+	\RowLabel{1}{$\tau_1$}
+	\RowLabel{2}{$\tau_2$}
+
+	\TaskArrival{1}{0}
+	\TaskArrival{2}{0}
+	\TaskExecution{1}{0}{2}
+	\TaskDeadline{1}{2}
+	\TaskArrival{1}{5}
+	\TaskExecution{2}{2}{5}
+	\TaskDeadline{2}{5}
+	\TaskExecution{1}{5}{7}
+	\TaskDeadline{1}{7}
+	\TaskExecution{3}{0}{7}
+	\TaskArrival{2}{8}
+	\TaskArrival{1}{10}
+	\TaskExecution{2}{8}{10}
+	\TaskExecution{1}{10}{12}
+	\TaskDeadline{1}{12}
+	\TaskExecution{2}{12}{13}
+	\TaskDeadline{2}{13}
+	\TaskExecution{3}{8}{13}
+	\TaskArrival{1}{15}
+	\TaskArrival{2}{16}
+	\TaskExecution{1}{15}{17}
+	\TaskDeadline{1}{17}
+	\TaskArrival{1}{20}
+	\TaskExecution{2}{17}{20}
+	\TaskDeadline{2}{20}
+	\TaskExecution{1}{20}{22}
+	\TaskDeadline{1}{22}
+	\TaskExecution{3}{15}{22}
+	\TaskArrival{2}{24}
+	\TaskArrival{1}{25}
+	\TaskExecution{2}{24}{25}
+	\TaskExecution{1}{25}{27}
+	\TaskDeadline{1}{27}
+	\TaskExecution{2}{27}{29}
+	\TaskDeadline{2}{29}
+	\TaskExecution{3}{24}{29}
+	\TaskArrival{1}{30}
+	\TaskArrival{2}{32}
+	\TaskExecution{1}{30}{32}
+	\TaskDeadline{1}{32}
+	\TaskArrival{1}{35}
+	\TaskExecution{2}{32}{35}
+	\TaskDeadline{2}{35}
+	\TaskExecution{1}{35}{37}
+	\TaskDeadline{1}{37}
+	\TaskExecution{3}{30}{37}
+	\TaskArrival{1}{40}
+	\TaskArrival{2}{40}
+
+	\end{RTGrid}
+
+\caption{Exemplo de escalonamento para tarefas.}
+\label{fig:ex1}
+\end{figure}
+\end{document}
