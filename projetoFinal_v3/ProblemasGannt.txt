@@ -1,5 +1,0 @@
-Problemas no Diagrama de Gannt:
-
-T2: termina no 14, mas deveria terminar no 15
-
-CPU: tempo 35-36 não deve ter quadrado
